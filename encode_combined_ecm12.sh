@@ -82,7 +82,7 @@ process_limit=$((cores / 2))
 
 originaldirectory=$(pwd)
 home_folder="/data/hongdong.qin"
-cfgdirectory="$home_folder/ECM-11/cfg"
+cfgdirectory="$home_folder/ECM-12/cfg"
 
 # set default paths and convert relative paths to absolute paths
 if [ -z "$BuildLabel" ]
@@ -118,7 +118,7 @@ fi
 
 if [ -z "$ReferenceAppFolder" ]
 then
-  ReferenceAppFolder="$originaldirectory/App_ECM11"
+  ReferenceAppFolder="$originaldirectory/App_ECM12"
 elif [ "${ReferenceAppFolder:0:1}" != "/" ]
 then
   ReferenceAppFolder="$originaldirectory/$ReferenceAppFolder"
