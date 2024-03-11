@@ -48,11 +48,11 @@ done
 echo "Collect and convert results"
 if [ "$uploadbitstream" == "1" ];
 then
-  eval "python3 ./Qin/CollectResults.py -l -b -s $folder"
+  eval "python3 ./CollectResults.py -l -b -s $folder"
 else
-  eval "python3 ./Qin/CollectResults.py -l -s $folder"
+  eval "python3 ./CollectResults.py -l -s $folder"
 fi
-eval "python3 ./Qin/ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv"
+eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv"
 
 if [ ! -z "$ONEDRIVE_FOLDER" ];
 then
