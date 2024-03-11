@@ -1,0 +1,87 @@
+RA Class A1 Campfire 22 0 65
+RA Class A1 Campfire 22 64 65
+RA Class A1 Campfire 22 128 65
+RA Class A1 Campfire 22 192 65
+RA Class A1 Campfire 22 256 44
+RA Class A1 Tango2 22 0 65
+RA Class A1 Tango2 22 64 65
+RA Class A1 Tango2 22 128 65
+RA Class A1 Tango2 22 192 65
+RA Class A1 Tango2 22 256 38
+RA Class A1 Campfire 27 0 65
+RA Class A1 Campfire 27 64 65
+RA Class A1 Campfire 27 128 65
+RA Class A1 Campfire 27 192 65
+RA Class A1 Campfire 27 256 44
+RA Class A1 Tango2 27 0 65
+RA Class A1 Tango2 27 64 65
+RA Class A1 Tango2 27 128 65
+RA Class A1 Tango2 27 192 65
+RA Class A1 Tango2 27 256 38
+RA Class A1 Campfire 32 0 65
+RA Class A1 Campfire 32 64 65
+RA Class A1 Campfire 32 128 65
+RA Class A1 Campfire 32 192 65
+RA Class A1 Campfire 32 256 44
+RA Class C PartyScene 22 
+RA Class F ArenaOfValor 37 
+RA Class C RaceHorsesC 22 
+RA Class C BasketballDrill 22 
+RA Class C BQMall 22 
+RA Class A1 Campfire 37 0 65
+RA Class A1 Campfire 37 64 65
+RA Class A1 Campfire 37 128 65
+RA Class A1 Campfire 37 192 65
+RA Class A1 Campfire 37 256 44
+RA Class C PartyScene 27 
+RA Class A1 Tango2 32 0 65
+RA Class A1 Tango2 32 64 65
+RA Class A1 Tango2 32 128 65
+RA Class A1 Tango2 32 192 65
+RA Class A1 Tango2 32 256 38
+RA Class C BasketballDrill 27 
+RA Class C RaceHorsesC 27 
+RA Class C BQMall 27 
+RA Class C PartyScene 32 
+RA Class A1 Tango2 37 0 65
+RA Class A1 Tango2 37 64 65
+RA Class A1 Tango2 37 128 65
+RA Class A1 Tango2 37 192 65
+RA Class A1 Tango2 37 256 38
+RA Class C BasketballDrill 32 
+RA Class F ArenaOfValor 22 0 65
+RA Class F ArenaOfValor 22 64 65
+RA Class F ArenaOfValor 22 128 65
+RA Class F ArenaOfValor 22 192 65
+RA Class F ArenaOfValor 22 256 65
+RA Class F ArenaOfValor 22 320 65
+RA Class F ArenaOfValor 22 384 65
+RA Class F ArenaOfValor 22 448 65
+RA Class F ArenaOfValor 22 512 65
+RA Class F ArenaOfValor 22 576 24
+RA Class C RaceHorsesC 32 
+RA Class C BQMall 32 
+RA Class C PartyScene 37 
+RA Class C BasketballDrill 37 
+RA Class F ArenaOfValor 27 0 65
+RA Class F ArenaOfValor 27 64 65
+RA Class F ArenaOfValor 27 128 65
+RA Class F ArenaOfValor 27 192 65
+RA Class F ArenaOfValor 27 256 65
+RA Class F ArenaOfValor 27 320 65
+RA Class F ArenaOfValor 27 384 65
+RA Class F ArenaOfValor 27 448 65
+RA Class F ArenaOfValor 27 512 65
+RA Class F ArenaOfValor 27 576 24
+RA Class C RaceHorsesC 37 
+RA Class C BQMall 37 
+RA Class F ArenaOfValor 32 0 65
+RA Class F ArenaOfValor 32 64 65
+RA Class F ArenaOfValor 32 128 65
+RA Class F ArenaOfValor 32 192 65
+RA Class F ArenaOfValor 32 256 65
+RA Class F ArenaOfValor 32 320 65
+RA Class F ArenaOfValor 32 384 65
+RA Class F ArenaOfValor 32 448 65
+RA Class F ArenaOfValor 32 512 65
+RA Class F ArenaOfValor 32 576 24

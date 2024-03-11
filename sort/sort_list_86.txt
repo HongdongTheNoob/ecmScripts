@@ -1,0 +1,40 @@
+AI Class A2 DaylightRoad2 22  
+AI Class A2 ParkRunning3 22  
+AI Class A2 ParkRunning3 27  
+AI Class A2 ParkRunning3 32  
+AI Class A2 DaylightRoad2 27  
+AI Class A2 ParkRunning3 37  
+AI Class A2 DaylightRoad2 32  
+AI Class A2 DaylightRoad2 37  
+AI Class D BQSquare 22  
+AI Class D BlowingBubbles 22  
+AI Class D BlowingBubbles 27  
+AI Class D BQSquare 27  
+AI Class D BasketballPass 22  
+AI Class D BlowingBubbles 32  
+AI Class D BQSquare 32  
+AI Class D BasketballPass 27  
+AI Class D RaceHorses 22  
+AI Class D BlowingBubbles 37  
+AI Class D BQSquare 37  
+AI Class D RaceHorses 27  
+AI Class D BasketballPass 32  
+AI Class D RaceHorses 32  
+AI Class D BasketballPass 37  
+AI Class D RaceHorses 37  
+RA Class TGM FlyingGraphics_420 37  
+RA Class TGM FlyingGraphics_420 22 0 65
+RA Class TGM FlyingGraphics_420 22 64 65
+RA Class TGM FlyingGraphics_420 22 128 65
+RA Class TGM FlyingGraphics_420 22 192 65
+RA Class TGM FlyingGraphics_420 22 256 44
+RA Class TGM FlyingGraphics_420 27 0 65
+RA Class TGM FlyingGraphics_420 27 64 65
+RA Class TGM FlyingGraphics_420 27 128 65
+RA Class TGM FlyingGraphics_420 27 192 65
+RA Class TGM FlyingGraphics_420 27 256 44
+RA Class TGM FlyingGraphics_420 32 0 65
+RA Class TGM FlyingGraphics_420 32 64 65
+RA Class TGM FlyingGraphics_420 32 128 65
+RA Class TGM FlyingGraphics_420 32 192 65
+RA Class TGM FlyingGraphics_420 32 256 44

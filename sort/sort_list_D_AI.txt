@@ -1,0 +1,16 @@
+AI Class D BQSquare 22
+AI Class D BlowingBubbles 22
+AI Class D BlowingBubbles 27
+AI Class D BQSquare 27
+AI Class D BasketballPass 22
+AI Class D BlowingBubbles 32
+AI Class D BQSquare 32
+AI Class D BasketballPass 27
+AI Class D RaceHorses 22
+AI Class D BlowingBubbles 37
+AI Class D BQSquare 37
+AI Class D RaceHorses 27
+AI Class D BasketballPass 32
+AI Class D RaceHorses 32
+AI Class D BasketballPass 37
+AI Class D RaceHorses 37

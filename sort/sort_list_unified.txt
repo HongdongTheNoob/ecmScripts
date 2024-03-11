@@ -1,0 +1,486 @@
+﻿RA Class A1 Campfire 22 0 65
+RA Class A1 Campfire 22 64 65
+RA Class A1 Campfire 22 128 65
+RA Class A1 Campfire 22 192 65
+RA Class A1 Campfire 22 256 44
+RA Class A2 ParkRunning3 22 0 65
+RA Class A2 ParkRunning3 22 64 65
+RA Class A2 ParkRunning3 22 128 65
+RA Class A2 ParkRunning3 22 192 65
+RA Class A2 ParkRunning3 22 256 44
+AI Class A2 DaylightRoad2 22
+RA Class A2 ParkRunning3 27 0 65
+RA Class A2 ParkRunning3 27 64 65
+RA Class A2 ParkRunning3 27 128 65
+RA Class A2 ParkRunning3 27 192 65
+RA Class A2 ParkRunning3 27 256 44
+RA Class A1 Tango2 22 0 65
+RA Class A1 Tango2 22 64 65
+RA Class A1 Tango2 22 128 65
+RA Class A1 Tango2 22 192 65
+RA Class A1 Tango2 22 256 38
+RA Class A2 DaylightRoad2 22 0 65
+RA Class A2 DaylightRoad2 22 64 65
+RA Class A2 DaylightRoad2 22 128 65
+RA Class A2 DaylightRoad2 22 192 65
+RA Class A2 DaylightRoad2 22 256 44
+AI Class A2 ParkRunning3 22
+RA Class A1 Campfire 27 0 65
+RA Class A1 Campfire 27 64 65
+RA Class A1 Campfire 27 128 65
+RA Class A1 Campfire 27 192 65
+RA Class A1 Campfire 27 256 44
+AI Class A2 CatRobot 22
+AI Class A1 Campfire 22
+RA Class A2 CatRobot 22 0 65
+RA Class A2 CatRobot 22 64 65
+RA Class A2 CatRobot 22 128 65
+RA Class A2 CatRobot 22 192 65
+RA Class A2 CatRobot 22 256 44
+RA Class A2 ParkRunning3 32 0 65
+RA Class A2 ParkRunning3 32 64 65
+RA Class A2 ParkRunning3 32 128 65
+RA Class A2 ParkRunning3 32 192 65
+RA Class A2 ParkRunning3 32 256 44
+RA Class A1 FoodMarket4 22 0 65
+RA Class A1 FoodMarket4 22 64 65
+RA Class A1 FoodMarket4 22 128 65
+RA Class A1 FoodMarket4 22 192 65
+RA Class A1 FoodMarket4 22 256 44
+AI Class F ArenaOfValor 22
+RA Class B BasketballDrive 37
+AI Class A1 Tango2 22
+RA Class B BQTerrace 32
+RA Class B MarketPlace 37
+AI Class A2 ParkRunning3 27
+RA Class A1 Tango2 27 0 65
+RA Class A1 Tango2 27 64 65
+RA Class A1 Tango2 27 128 65
+RA Class A1 Tango2 27 192 65
+RA Class A1 Tango2 27 256 38
+RA Class TGM Console_420 22
+RA Class A1 Campfire 32 0 65
+RA Class A1 Campfire 32 64 65
+RA Class A1 Campfire 32 128 65
+RA Class A1 Campfire 32 192 65
+RA Class A1 Campfire 32 256 44
+RA Class A2 DaylightRoad2 27 0 65
+RA Class A2 DaylightRoad2 27 64 65
+RA Class A2 DaylightRoad2 27 128 65
+RA Class A2 DaylightRoad2 27 192 65
+RA Class A2 DaylightRoad2 27 256 44
+RA Class C PartyScene 22
+RA Class B Cactus 37
+RA Class TGM Console_420 27
+RA Class TGM FlyingGraphics_420 37
+RA Class F BasketballDrillText 22
+RA Class A2 CatRobot 27 0 65
+RA Class A2 CatRobot 27 64 65
+RA Class A2 CatRobot 27 128 65
+RA Class A2 CatRobot 27 192 65
+RA Class A2 CatRobot 27 256 44
+RA Class F ArenaOfValor 37
+RA Class A1 FoodMarket4 27 0 65
+RA Class A1 FoodMarket4 27 64 65
+RA Class A1 FoodMarket4 27 128 65
+RA Class A1 FoodMarket4 27 192 65
+RA Class A1 FoodMarket4 27 256 44
+AI Class A1 Campfire 27
+AI Class F ArenaOfValor 27
+RA Class TGM Console_420 32
+RA Class A2 ParkRunning3 37 0 65
+RA Class A2 ParkRunning3 37 64 65
+RA Class A2 ParkRunning3 37 128 65
+RA Class A2 ParkRunning3 37 192 65
+RA Class A2 ParkRunning3 37 256 44
+RA Class C RaceHorsesC 22
+RA Class C BasketballDrill 22
+AI Class B Cactus 22
+RA Class C BQMall 22
+RA Class A1 Campfire 37 0 65
+RA Class A1 Campfire 37 64 65
+RA Class A1 Campfire 37 128 65
+RA Class A1 Campfire 37 192 65
+RA Class A1 Campfire 37 256 44
+AI Class B BQTerrace 22
+AI Class A2 ParkRunning3 32
+RA Class TGM Console_420 37
+AI Class A2 DaylightRoad2 27
+AI Class A1 FoodMarket4 22
+AI Class B MarketPlace 22
+RA Class C PartyScene 27
+RA Class B BQTerrace 37
+RA Class A1 Tango2 32 0 65
+RA Class A1 Tango2 32 64 65
+RA Class A1 Tango2 32 128 65
+RA Class A1 Tango2 32 192 65
+RA Class A1 Tango2 32 256 38
+RA Class A2 DaylightRoad2 32 0 65
+RA Class A2 DaylightRoad2 32 64 65
+RA Class A2 DaylightRoad2 32 128 65
+RA Class A2 DaylightRoad2 32 192 65
+RA Class A2 DaylightRoad2 32 256 44
+AI Class B BasketballDrive 22
+RA Class F BasketballDrillText 27
+RA Class A2 CatRobot 32 0 65
+RA Class A2 CatRobot 32 64 65
+RA Class A2 CatRobot 32 128 65
+RA Class A2 CatRobot 32 192 65
+RA Class A2 CatRobot 32 256 44
+RA Class A1 FoodMarket4 32 0 65
+RA Class A1 FoodMarket4 32 64 65
+RA Class A1 FoodMarket4 32 128 65
+RA Class A1 FoodMarket4 32 192 65
+RA Class A1 FoodMarket4 32 256 44
+AI Class F ArenaOfValor 32
+AI Class TGM ChineseEditing_420 22
+RA Class TGM ChineseEditing_420 22
+RA Class C BasketballDrill 27
+AI Class A2 CatRobot 27
+AI Class B BQTerrace 27
+AI Class TGM ChineseEditing_420 27
+RA Class TGM FlyingGraphics_420 22 0 65
+RA Class TGM FlyingGraphics_420 22 64 65
+RA Class TGM FlyingGraphics_420 22 128 65
+RA Class TGM FlyingGraphics_420 22 192 65
+RA Class TGM FlyingGraphics_420 22 256 44
+RA Class B BQTerrace 22 0 65
+RA Class B BQTerrace 22 64 65
+RA Class B BQTerrace 22 128 65
+RA Class B BQTerrace 22 192 65
+RA Class B BQTerrace 22 256 65
+RA Class B BQTerrace 22 320 65
+RA Class B BQTerrace 22 384 65
+RA Class B BQTerrace 22 448 65
+RA Class B BQTerrace 22 512 65
+RA Class B BQTerrace 22 576 24
+RA Class C RaceHorsesC 27
+RA Class TGM ChineseEditing_420 27
+RA Class B BasketballDrive 22 0 65
+RA Class B BasketballDrive 22 64 65
+RA Class B BasketballDrive 22 128 65
+RA Class B BasketballDrive 22 192 65
+RA Class B BasketballDrive 22 256 65
+RA Class B BasketballDrive 22 320 65
+RA Class B BasketballDrive 22 384 65
+RA Class B BasketballDrive 22 448 52
+AI Class TGM ChineseEditing_420 32
+RA Class TGM Desktop_420 22
+RA Class C BQMall 27
+RA Class TGM ChineseEditing_420 32
+AI Class TGM ChineseEditing_420 37
+RA Class TGM Desktop_420 27
+RA Class C PartyScene 32
+RA Class TGM Desktop_420 32
+AI Class B Cactus 27
+AI Class A2 ParkRunning3 37
+AI Class A1 Campfire 32
+RA Class TGM FlyingGraphics_420 27 0 65
+RA Class TGM FlyingGraphics_420 27 64 65
+RA Class TGM FlyingGraphics_420 27 128 65
+RA Class TGM FlyingGraphics_420 27 192 65
+RA Class TGM FlyingGraphics_420 27 256 44
+RA Class A2 DaylightRoad2 37 0 65
+RA Class A2 DaylightRoad2 37 64 65
+RA Class A2 DaylightRoad2 37 128 65
+RA Class A2 DaylightRoad2 37 192 65
+RA Class A2 DaylightRoad2 37 256 44
+RA Class A1 Tango2 37 0 65
+RA Class A1 Tango2 37 64 65
+RA Class A1 Tango2 37 128 65
+RA Class A1 Tango2 37 192 65
+RA Class A1 Tango2 37 256 38
+RA Class TGM ChineseEditing_420 37
+RA Class B MarketPlace 22 0 65
+RA Class B MarketPlace 22 64 65
+RA Class B MarketPlace 22 128 65
+RA Class B MarketPlace 22 192 65
+RA Class B MarketPlace 22 256 65
+RA Class B MarketPlace 22 320 65
+RA Class B MarketPlace 22 384 65
+RA Class B MarketPlace 22 448 65
+RA Class B MarketPlace 22 512 65
+RA Class B MarketPlace 22 576 24
+RA Class A2 CatRobot 37 0 65
+RA Class A2 CatRobot 37 64 65
+RA Class A2 CatRobot 37 128 65
+RA Class A2 CatRobot 37 192 65
+RA Class A2 CatRobot 37 256 44
+AI Class B RitualDance 22
+RA Class A1 FoodMarket4 37 0 65
+RA Class A1 FoodMarket4 37 64 65
+RA Class A1 FoodMarket4 37 128 65
+RA Class A1 FoodMarket4 37 192 65
+RA Class A1 FoodMarket4 37 256 44
+RA Class B Cactus 22 0 65
+RA Class B Cactus 22 64 65
+RA Class B Cactus 22 128 65
+RA Class B Cactus 22 192 65
+RA Class B Cactus 22 256 65
+RA Class B Cactus 22 320 65
+RA Class B Cactus 22 384 65
+RA Class B Cactus 22 448 52
+RA Class TGM Desktop_420 37
+AI Class B MarketPlace 27
+RA Class F BasketballDrillText 32
+RA Class C BasketballDrill 32
+RA Class F ArenaOfValor 22 0 65
+RA Class F ArenaOfValor 22 64 65
+RA Class F ArenaOfValor 22 128 65
+RA Class F ArenaOfValor 22 192 65
+RA Class F ArenaOfValor 22 256 65
+RA Class F ArenaOfValor 22 320 65
+RA Class F ArenaOfValor 22 384 65
+RA Class F ArenaOfValor 22 448 65
+RA Class F ArenaOfValor 22 512 65
+RA Class F ArenaOfValor 22 576 24
+AI Class F ArenaOfValor 37
+RA Class C RaceHorsesC 32
+AI Class B BQTerrace 32
+AI Class A2 DaylightRoad2 32
+RA Class F SlideShow 22
+AI Class B BasketballDrive 27
+RA Class B RitualDance 22 0 65
+RA Class B RitualDance 22 64 65
+RA Class B RitualDance 22 128 65
+RA Class B RitualDance 22 192 65
+RA Class B RitualDance 22 256 65
+RA Class B RitualDance 22 320 65
+RA Class B RitualDance 22 384 65
+RA Class B RitualDance 22 448 65
+RA Class B RitualDance 22 512 65
+RA Class B RitualDance 22 576 24
+RA Class B BasketballDrive 27 0 65
+RA Class B BasketballDrive 27 64 65
+RA Class B BasketballDrive 27 128 65
+RA Class B BasketballDrive 27 192 65
+RA Class B BasketballDrive 27 256 65
+RA Class B BasketballDrive 27 320 65
+RA Class B BasketballDrive 27 384 65
+RA Class B BasketballDrive 27 448 52
+RA Class C BQMall 32
+AI Class A2 CatRobot 32
+AI Class TGM Desktop_420 22
+AI Class A1 FoodMarket4 27
+RA Class TGM FlyingGraphics_420 32 0 65
+RA Class TGM FlyingGraphics_420 32 64 65
+RA Class TGM FlyingGraphics_420 32 128 65
+RA Class TGM FlyingGraphics_420 32 192 65
+RA Class TGM FlyingGraphics_420 32 256 44
+AI Class A1 Tango2 27
+RA Class D BasketballPass 22
+AI Class TGM Desktop_420 27
+AI Class TGM Desktop_420 32
+RA Class C PartyScene 37
+AI Class B Cactus 32
+RA Class B MarketPlace 27 0 65
+RA Class B MarketPlace 27 64 65
+RA Class B MarketPlace 27 128 65
+RA Class B MarketPlace 27 192 65
+RA Class B MarketPlace 27 256 65
+RA Class B MarketPlace 27 320 65
+RA Class B MarketPlace 27 384 65
+RA Class B MarketPlace 27 448 65
+RA Class B MarketPlace 27 512 65
+RA Class B MarketPlace 27 576 24
+RA Class F SlideShow 27
+AI Class B RitualDance 27
+AI Class TGM Desktop_420 37
+RA Class D BQSquare 22
+AI Class TGM Console_420 22
+RA Class B Cactus 27 0 65
+RA Class B Cactus 27 64 65
+RA Class B Cactus 27 128 65
+RA Class B Cactus 27 192 65
+RA Class B Cactus 27 256 65
+RA Class B Cactus 27 320 65
+RA Class B Cactus 27 384 65
+RA Class B Cactus 27 448 52
+RA Class B RitualDance 27 0 65
+RA Class B RitualDance 27 64 65
+RA Class B RitualDance 27 128 65
+RA Class B RitualDance 27 192 65
+RA Class B RitualDance 27 256 65
+RA Class B RitualDance 27 320 65
+RA Class B RitualDance 27 384 65
+RA Class B RitualDance 27 448 65
+RA Class B RitualDance 27 512 65
+RA Class B RitualDance 27 576 24
+AI Class B MarketPlace 32
+RA Class D BlowingBubbles 22
+RA Class F BasketballDrillText 37
+AI Class TGM Console_420 27
+RA Class C BasketballDrill 37
+AI Class TGM FlyingGraphics_420 22
+AI Class A1 Campfire 37
+AI Class E FourPeople 22
+RA Class F ArenaOfValor 27 0 65
+RA Class F ArenaOfValor 27 64 65
+RA Class F ArenaOfValor 27 128 65
+RA Class F ArenaOfValor 27 192 65
+RA Class F ArenaOfValor 27 256 65
+RA Class F ArenaOfValor 27 320 65
+RA Class F ArenaOfValor 27 384 65
+RA Class F ArenaOfValor 27 448 65
+RA Class F ArenaOfValor 27 512 65
+RA Class F ArenaOfValor 27 576 24
+RA Class B BQTerrace 27 0 65
+RA Class B BQTerrace 27 64 65
+RA Class B BQTerrace 27 128 65
+RA Class B BQTerrace 27 192 65
+RA Class B BQTerrace 27 256 65
+RA Class B BQTerrace 27 320 65
+RA Class B BQTerrace 27 384 65
+RA Class B BQTerrace 27 448 65
+RA Class B BQTerrace 27 512 65
+RA Class B BQTerrace 27 576 24
+AI Class TGM Console_420 32
+AI Class TGM FlyingGraphics_420 27
+RA Class B BasketballDrive 32 0 65
+RA Class B BasketballDrive 32 64 65
+RA Class B BasketballDrive 32 128 65
+RA Class B BasketballDrive 32 192 65
+RA Class B BasketballDrive 32 256 65
+RA Class B BasketballDrive 32 320 65
+RA Class B BasketballDrive 32 384 65
+RA Class B BasketballDrive 32 448 52
+RA Class C RaceHorsesC 37
+RA Class C BQMall 37
+AI Class F BasketballDrillText 22
+RA Class D RaceHorses 22
+RA Class D BasketballPass 27
+AI Class B BQTerrace 37
+AI Class TGM Console_420 37
+AI Class TGM FlyingGraphics_420 32
+AI Class A1 FoodMarket4 32
+RA Class B RitualDance 32 0 65
+RA Class B RitualDance 32 64 65
+RA Class B RitualDance 32 128 65
+RA Class B RitualDance 32 192 65
+RA Class B RitualDance 32 256 65
+RA Class B RitualDance 32 320 65
+RA Class B RitualDance 32 384 65
+RA Class B RitualDance 32 448 65
+RA Class B RitualDance 32 512 65
+RA Class B RitualDance 32 576 24
+RA Class F SlideShow 32
+AI Class C PartyScene 22
+AI Class A2 CatRobot 37
+RA Class B MarketPlace 32 0 65
+RA Class B MarketPlace 32 64 65
+RA Class B MarketPlace 32 128 65
+RA Class B MarketPlace 32 192 65
+RA Class B MarketPlace 32 256 65
+RA Class B MarketPlace 32 320 65
+RA Class B MarketPlace 32 384 65
+RA Class B MarketPlace 32 448 65
+RA Class B MarketPlace 32 512 65
+RA Class B MarketPlace 32 576 24
+RA Class B Cactus 32 0 65
+RA Class B Cactus 32 64 65
+RA Class B Cactus 32 128 65
+RA Class B Cactus 32 192 65
+RA Class B Cactus 32 256 65
+RA Class B Cactus 32 320 65
+RA Class B Cactus 32 384 65
+RA Class B Cactus 32 448 52
+AI Class B BasketballDrive 32
+AI Class E Johnny 22
+AI Class E KristenAndSara 22
+AI Class A2 DaylightRoad2 37
+AI Class TGM FlyingGraphics_420 37
+AI Class B RitualDance 32
+RA Class D BlowingBubbles 27
+AI Class C PartyScene 27
+AI Class C BQMall 22
+AI Class F BasketballDrillText 27
+AI Class B Cactus 37
+AI Class E FourPeople 27
+RA Class D RaceHorses 27
+RA Class D BasketballPass 32
+RA Class F SlideShow 37
+AI Class B MarketPlace 37
+RA Class F ArenaOfValor 32 0 65
+RA Class F ArenaOfValor 32 64 65
+RA Class F ArenaOfValor 32 128 65
+RA Class F ArenaOfValor 32 192 65
+RA Class F ArenaOfValor 32 256 65
+RA Class F ArenaOfValor 32 320 65
+RA Class F ArenaOfValor 32 384 65
+RA Class F ArenaOfValor 32 448 65
+RA Class F ArenaOfValor 32 512 65
+RA Class F ArenaOfValor 32 576 24
+AI Class A1 Tango2 32
+RA Class B RitualDance 37 0 65
+RA Class B RitualDance 37 64 65
+RA Class B RitualDance 37 128 65
+RA Class B RitualDance 37 192 65
+RA Class B RitualDance 37 256 65
+RA Class B RitualDance 37 320 65
+RA Class B RitualDance 37 384 65
+RA Class B RitualDance 37 448 65
+RA Class B RitualDance 37 512 65
+RA Class B RitualDance 37 576 24
+RA Class D BQSquare 27
+AI Class C BasketballDrill 22
+AI Class C PartyScene 32
+AI Class F SlideEditing 22
+RA Class D BlowingBubbles 32
+AI Class F BasketballDrillText 32
+AI Class C BQMall 27
+AI Class A1 FoodMarket4 37
+AI Class E KristenAndSara 27
+AI Class E FourPeople 32
+AI Class F SlideShow 22
+AI Class E Johnny 27
+AI Class B RitualDance 37
+RA Class D RaceHorses 32
+AI Class F SlideEditing 27
+RA Class F SlideEditing 22
+AI Class B BasketballDrive 37
+RA Class D BasketballPass 37
+AI Class F SlideEditing 32
+AI Class C BasketballDrill 27
+RA Class F SlideEditing 27
+AI Class C RaceHorsesC 22
+AI Class F SlideEditing 37
+AI Class C PartyScene 37
+RA Class F SlideEditing 32
+AI Class A1 Tango2 37
+AI Class E KristenAndSara 32
+AI Class C BQMall 32
+AI Class F SlideShow 27
+RA Class D BQSquare 32
+RA Class D BlowingBubbles 37
+RA Class F SlideEditing 37
+AI Class E Johnny 32
+AI Class E FourPeople 37
+AI Class F BasketballDrillText 37
+AI Class C RaceHorsesC 27
+RA Class D RaceHorses 37
+AI Class C BasketballDrill 32
+AI Class F SlideShow 32
+AI Class E KristenAndSara 37
+AI Class D BQSquare 22
+AI Class C BQMall 37
+AI Class D BlowingBubbles 22
+AI Class C RaceHorsesC 32
+RA Class D BQSquare 37
+AI Class F SlideShow 37
+AI Class D BlowingBubbles 27
+AI Class E Johnny 37
+AI Class D BQSquare 27
+AI Class C BasketballDrill 37
+AI Class D BasketballPass 22
+AI Class C RaceHorsesC 37
+AI Class D BlowingBubbles 32
+AI Class D BQSquare 32
+AI Class D BasketballPass 27
+AI Class D RaceHorses 22
+AI Class D BlowingBubbles 37
+AI Class D BQSquare 37
+AI Class D RaceHorses 27
+AI Class D BasketballPass 32
+AI Class D RaceHorses 32
+AI Class D BasketballPass 37
+AI Class D RaceHorses 37

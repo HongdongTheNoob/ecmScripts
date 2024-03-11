@@ -1,0 +1,16 @@
+AI Class C PartyScene 22
+AI Class C BQMall 22
+AI Class C PartyScene 27
+AI Class C BasketballDrill 22
+AI Class C PartyScene 32
+AI Class C BQMall 27
+AI Class C RaceHorsesC 22
+AI Class C BasketballDrill 27
+AI Class C PartyScene 37
+AI Class C BQMall 32
+AI Class C RaceHorsesC 27
+AI Class C BasketballDrill 32
+AI Class C BQMall 37
+AI Class C RaceHorsesC 32
+AI Class C BasketballDrill 37
+AI Class C RaceHorsesC 37

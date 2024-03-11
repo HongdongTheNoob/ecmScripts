@@ -1,0 +1,12 @@
+AI Class A1 Campfire 22
+AI Class A1 Tango2 22
+AI Class A1 Campfire 27
+AI Class A1 FoodMarket4 22
+AI Class A1 Campfire 32
+AI Class A1 Tango2 27
+AI Class A1 FoodMarket4 27
+AI Class A1 Campfire 37
+AI Class A1 FoodMarket4 32
+AI Class A1 Tango2 32
+AI Class A1 FoodMarket4 37
+AI Class A1 Tango2 37

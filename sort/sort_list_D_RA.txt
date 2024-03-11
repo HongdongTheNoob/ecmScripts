@@ -1,0 +1,16 @@
+RA Class D BasketballPass 22
+RA Class D BQSquare 22
+RA Class D BlowingBubbles 22
+RA Class D RaceHorses 22
+RA Class D BasketballPass 27
+RA Class D BlowingBubbles 27
+RA Class D RaceHorses 27
+RA Class D BasketballPass 32
+RA Class D BQSquare 27
+RA Class D BlowingBubbles 32
+RA Class D RaceHorses 32
+RA Class D BasketballPass 37
+RA Class D BQSquare 32
+RA Class D BlowingBubbles 37
+RA Class D RaceHorses 37
+RA Class D BQSquare 37

@@ -1,0 +1,12 @@
+AI Class E FourPeople 22
+AI Class E KristenAndSara 22
+AI Class E Johnny 22
+AI Class E FourPeople 27
+AI Class E KristenAndSara 27
+AI Class E Johnny 27
+AI Class E FourPeople 32
+AI Class E KristenAndSara 32
+AI Class E FourPeople 37
+AI Class E Johnny 32
+AI Class E KristenAndSara 37
+AI Class E Johnny 37

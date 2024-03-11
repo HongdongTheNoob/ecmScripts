@@ -1,0 +1,12 @@
+AI Class A2 DaylightRoad2 22
+AI Class A2 CatRobot 22
+AI Class A2 ParkRunning3 22
+AI Class A2 ParkRunning3 27
+AI Class A2 DaylightRoad2 27
+AI Class A2 ParkRunning3 32
+AI Class A2 CatRobot 27
+AI Class A2 ParkRunning3 37
+AI Class A2 DaylightRoad2 32
+AI Class A2 CatRobot 32
+AI Class A2 DaylightRoad2 37
+AI Class A2 CatRobot 37

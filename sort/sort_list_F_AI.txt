@@ -1,0 +1,16 @@
+AI Class F ArenaOfValor 22
+AI Class F ArenaOfValor 27
+AI Class F ArenaOfValor 32
+AI Class F ArenaOfValor 37
+AI Class F BasketballDrillText 22
+AI Class F BasketballDrillText 27
+AI Class F SlideEditing 22
+AI Class F BasketballDrillText 32
+AI Class F SlideEditing 27
+AI Class F SlideShow 22
+AI Class F SlideEditing 32
+AI Class F SlideEditing 37
+AI Class F SlideShow 27
+AI Class F BasketballDrillText 37
+AI Class F SlideShow 32
+AI Class F SlideShow 37

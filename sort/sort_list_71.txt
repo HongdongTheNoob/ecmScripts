@@ -1,0 +1,144 @@
+AI Class A2 DaylightRoad2 22  
+AI Class A2 ParkRunning3 22  
+AI Class A2 CatRobot 22  
+AI Class F ArenaOfValor 22  
+AI Class A2 ParkRunning3 27  
+AI Class F ArenaOfValor 27  
+AI Class B Cactus 22  
+AI Class B BQTerrace 22  
+AI Class A2 ParkRunning3 32  
+AI Class A2 DaylightRoad2 27  
+AI Class F ArenaOfValor 32  
+AI Class A2 CatRobot 27  
+AI Class B BQTerrace 27  
+AI Class B Cactus 27  
+AI Class A2 ParkRunning3 37  
+AI Class B RitualDance 22  
+AI Class F ArenaOfValor 37  
+AI Class B BQTerrace 32  
+AI Class A2 DaylightRoad2 32  
+AI Class A2 CatRobot 32  
+AI Class B Cactus 32  
+AI Class B RitualDance 27  
+AI Class F BasketballDrillText 22  
+AI Class B BQTerrace 37  
+AI Class A2 CatRobot 37  
+AI Class A2 DaylightRoad2 37  
+AI Class B RitualDance 32  
+AI Class F BasketballDrillText 27  
+AI Class B Cactus 37  
+AI Class F SlideEditing 22  
+AI Class F BasketballDrillText 32  
+AI Class F SlideShow 22  
+AI Class B RitualDance 37  
+AI Class F SlideEditing 27  
+AI Class F SlideEditing 32  
+AI Class F SlideEditing 37  
+AI Class F SlideShow 27  
+AI Class F BasketballDrillText 37  
+AI Class F SlideShow 32  
+AI Class F SlideShow 37  
+RA Class A1 FoodMarket4 22 0 65
+RA Class A1 FoodMarket4 22 64 65
+RA Class A1 FoodMarket4 22 128 65
+RA Class A1 FoodMarket4 22 192 65
+RA Class A1 FoodMarket4 22 256 44
+RA Class B BasketballDrive 37  
+RA Class B MarketPlace 37  
+RA Class TGM Console_420 22  
+RA Class TGM Console_420 27  
+RA Class A1 FoodMarket4 27 0 65
+RA Class A1 FoodMarket4 27 64 65
+RA Class A1 FoodMarket4 27 128 65
+RA Class A1 FoodMarket4 27 192 65
+RA Class A1 FoodMarket4 27 256 44
+RA Class TGM Console_420 32  
+RA Class TGM Console_420 37  
+RA Class A1 FoodMarket4 32 0 65
+RA Class A1 FoodMarket4 32 64 65
+RA Class A1 FoodMarket4 32 128 65
+RA Class A1 FoodMarket4 32 192 65
+RA Class A1 FoodMarket4 32 256 44
+RA Class TGM ChineseEditing_420 22  
+RA Class TGM ChineseEditing_420 27  
+RA Class B BasketballDrive 22 0 65
+RA Class B BasketballDrive 22 64 65
+RA Class B BasketballDrive 22 128 65
+RA Class B BasketballDrive 22 192 65
+RA Class B BasketballDrive 22 256 65
+RA Class B BasketballDrive 22 320 65
+RA Class B BasketballDrive 22 384 65
+RA Class B BasketballDrive 22 448 52
+RA Class TGM Desktop_420 22  
+RA Class TGM ChineseEditing_420 32  
+RA Class TGM Desktop_420 27  
+RA Class TGM Desktop_420 32  
+RA Class TGM ChineseEditing_420 37  
+RA Class B MarketPlace 22 0 65
+RA Class B MarketPlace 22 64 65
+RA Class B MarketPlace 22 128 65
+RA Class B MarketPlace 22 192 65
+RA Class B MarketPlace 22 256 65
+RA Class B MarketPlace 22 320 65
+RA Class B MarketPlace 22 384 65
+RA Class B MarketPlace 22 448 65
+RA Class B MarketPlace 22 512 65
+RA Class B MarketPlace 22 576 24
+RA Class A1 FoodMarket4 37 0 65
+RA Class A1 FoodMarket4 37 64 65
+RA Class A1 FoodMarket4 37 128 65
+RA Class A1 FoodMarket4 37 192 65
+RA Class A1 FoodMarket4 37 256 44
+RA Class TGM Desktop_420 37  
+RA Class B BasketballDrive 27 0 65
+RA Class B BasketballDrive 27 64 65
+RA Class B BasketballDrive 27 128 65
+RA Class B BasketballDrive 27 192 65
+RA Class B BasketballDrive 27 256 65
+RA Class B BasketballDrive 27 320 65
+RA Class B BasketballDrive 27 384 65
+RA Class B BasketballDrive 27 448 52
+RA Class D BasketballPass 22  
+RA Class B MarketPlace 27 0 65
+RA Class B MarketPlace 27 64 65
+RA Class B MarketPlace 27 128 65
+RA Class B MarketPlace 27 192 65
+RA Class B MarketPlace 27 256 65
+RA Class B MarketPlace 27 320 65
+RA Class B MarketPlace 27 384 65
+RA Class B MarketPlace 27 448 65
+RA Class B MarketPlace 27 512 65
+RA Class B MarketPlace 27 576 24
+RA Class D BQSquare 22  
+RA Class D BlowingBubbles 22  
+RA Class B BasketballDrive 32 0 65
+RA Class B BasketballDrive 32 64 65
+RA Class B BasketballDrive 32 128 65
+RA Class B BasketballDrive 32 192 65
+RA Class B BasketballDrive 32 256 65
+RA Class B BasketballDrive 32 320 65
+RA Class B BasketballDrive 32 384 65
+RA Class B BasketballDrive 32 448 52
+RA Class D RaceHorses 22  
+RA Class D BasketballPass 27  
+RA Class B MarketPlace 32 0 65
+RA Class B MarketPlace 32 64 65
+RA Class B MarketPlace 32 128 65
+RA Class B MarketPlace 32 192 65
+RA Class B MarketPlace 32 256 65
+RA Class B MarketPlace 32 320 65
+RA Class B MarketPlace 32 384 65
+RA Class B MarketPlace 32 448 65
+RA Class B MarketPlace 32 512 65
+RA Class B MarketPlace 32 576 24
+RA Class D BlowingBubbles 27  
+RA Class D RaceHorses 27  
+RA Class D BasketballPass 32  
+RA Class D BQSquare 27  
+RA Class D BlowingBubbles 32  
+RA Class D RaceHorses 32  
+RA Class D BasketballPass 37  
+RA Class D BQSquare 32  
+RA Class D BlowingBubbles 37  
+RA Class D RaceHorses 37  
+RA Class D BQSquare 37  

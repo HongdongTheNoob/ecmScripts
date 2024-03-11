@@ -1,0 +1,16 @@
+RA Class C PartyScene 22
+RA Class C BQMall 22
+RA Class C PartyScene 27
+RA Class C BasketballDrill 22
+RA Class C PartyScene 32
+RA Class C BQMall 27
+RA Class C RaceHorsesC 22
+RA Class C BasketballDrill 27
+RA Class C PartyScene 37
+RA Class C BQMall 32
+RA Class C RaceHorsesC 27
+RA Class C BasketballDrill 32
+RA Class C BQMall 37
+RA Class C RaceHorsesC 32
+RA Class C BasketballDrill 37
+RA Class C RaceHorsesC 37
