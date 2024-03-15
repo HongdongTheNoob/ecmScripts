@@ -6,7 +6,7 @@ import argparse
 
 def preprocess_folder(folder_name, file_extension, target_folder):
     # Create the destination directory if it doesn't exist
-    dest_dir = os.path.join('/data/hongdong.qin/Preprocessing', target_folder, folder_name)
+    dest_dir = os.path.join('/data/hongdong.qin/ecmScripts', target_folder, folder_name)
     os.makedirs(dest_dir, exist_ok=True)
 
     # Copy .txt files from the source directory to the destination directory
