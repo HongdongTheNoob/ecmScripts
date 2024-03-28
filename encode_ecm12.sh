@@ -84,7 +84,7 @@ cores=$(nproc)
 
 originaldirectory=$(pwd)
 home_folder="/data/hongdong.qin"
-cfgdirectory="$home_folder/ECM-12/cfg"
+cfgdirectory="$home_folder/ecm/cfg"
 
 #设置缺省路径以及将$2和$3转换成绝对路径
 if [ -z "$BuildLabel" ]
