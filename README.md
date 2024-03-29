@@ -25,4 +25,5 @@ bash ./decode.sh
 ```
 
 ## Collect results and gather them into a CSV file
-Check out CollectAndUpload.sh
+* Make sure folder 'Analysis' exists
+* Check out CollectAndUpload.sh
