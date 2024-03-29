@@ -9,6 +9,7 @@ bash ./encode_ecm12.sh
 ```
 
 ### A typical scenario
+* Open encode_ecm12.sh and check home_folder and cfgdirectory variables. Make sure home_folder points to your own data folder and cfgdirectory points to the cfg folder of your ECM repo.
 * Create a folder named App_BUILDLABEL.
 * Copy ECM executables into the folder
 * Test it on classes C, D and E, all intra
