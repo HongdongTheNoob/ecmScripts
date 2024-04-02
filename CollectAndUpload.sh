@@ -52,7 +52,12 @@ then
 else
   eval "python3 ./CollectResults.py -l -s $folder"
 fi
-eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv"
+if [ "$uploaddecoderesults" == "1" ];
+then
+  eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv 1"
+else
+  eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv"
+fi
 
 if [ ! -z "$ONEDRIVE_FOLDER" ];
 then

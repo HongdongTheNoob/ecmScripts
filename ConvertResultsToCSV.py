@@ -106,11 +106,16 @@ if __name__ == '__main__':
   
   input_directory = sys.argv[1]
   output_file = sys.argv[2]
+  
+  convert_decode_file = False
+  if len(sys.argv) >= 4:
+    convert_decode_file = bool(sys.argv[3])
 
   # single coded files
   search_files(input_directory, output_file)
   # split coded files
   # search_split_files(output_file)
 
-  output_file_decode = output_file.replace(".csv", "-decode.csv")
-  search_files_decode(input_directory, output_file_decode)
+  if convert_decode_file:
+    output_file_decode = output_file.replace(".csv", "-decode.csv")
+    search_files_decode(input_directory, output_file_decode)
