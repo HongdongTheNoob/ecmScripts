@@ -140,7 +140,7 @@ do
   ReadStartFrame=$(echo $line | cut -d " " -f 6)
   ReadFrameCount=$(echo $line | cut -d " " -f 7)
     
-  echo "$encfg $ClassName $Class $name $QP1 $QP"
+  # echo "$encfg $ClassName $Class $name $QP1 $QP"
 
   if [[ "$encfg" != "RA" ]] && [[ "$encfg" != "LP" ]] && [[ "$encfg" != "LB" ]] && [[ "$encfg" != "AI" ]]
   then
@@ -148,8 +148,8 @@ do
       continue
   fi
 
-  echo "=============================== a new processing core ============================================="
-	echo "Check $encfg $Class $name $QP"
+  echo "=== a new processing core ==="
+	echo "$encfg $Class $name $QP"
 
   OutputFolder="$testfield/$Class/$name"
   $(mkdir -p $OutputFolder)
