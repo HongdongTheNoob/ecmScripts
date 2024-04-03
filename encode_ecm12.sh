@@ -329,8 +329,8 @@ do
   if [ -z "PrintCommandsOnly" ]
   then
     eval $fullcommand
+    sleep 1m
   fi
-  sleep 1m
 
 done < "$txt"
 # done
