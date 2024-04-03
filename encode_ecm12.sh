@@ -16,6 +16,7 @@ help()
   # echo "-r|--reference_app_folder ReferenceAppFolder (default: \$pwd/App_ECM10)"
   echo "-f|--frame_count FrameCount (run whole sequences if absent)" 
   echo "-b|--build_label BuildLabel"
+  echo "-p|--print_commands_only"
   echo "If BuildLabel is present,"
   echo "1) OutputFolder will be set as $home_folder/outputs/BuildLabel;"
   echo "2) TestAppFolder will be set as \$pwd/App_BuildLabel;"
@@ -64,6 +65,10 @@ while [[ $# -gt 0 ]]; do
       BuildLabel="$2"
       shift # past argument
       shift # past value
+      ;;
+    -p|--print_commands_only)
+      PrintCommandsOnly="1"
+      shift # past argument
       ;;
     -*|--*)
       echo "Unknown option $1"
@@ -321,8 +326,10 @@ do
     fi
   done
 
-  
-  eval $fullcommand
+  if [ -z "PrintCommandsOnly" ]
+  then
+    eval $fullcommand
+  fi
   sleep 1m
 
 done < "$txt"
