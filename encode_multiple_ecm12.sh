@@ -86,9 +86,9 @@ done
 
 Testfields=()
 TestAppFolders=()
-for label in "${BuildLabels[@]}"; do
-  Testfields+=( "$home_folder/outputs/$BuildLabels" )
-  TestAppFolders+=( "$originaldirectory/App_$BuildLabels" )
+for ((i = 0; i < $buildCount; i++)); do
+  Testfields+=( "$home_folder/outputs/${BuildLabels[i]}" )
+  TestAppFolders+=( "$originaldirectory/App_${BuildLabels[i]}" )
 done
 
 if [ -z "$dataset" ]
@@ -148,7 +148,7 @@ do
   configfilelist="$encodecfg"
 
   # configurations per-class
-  # JVET-Y2017 Section 6
+  # JVET-AF2017 Section 6
   classcfg=""
   if [ "$encfg" == "RA" ]
   then
