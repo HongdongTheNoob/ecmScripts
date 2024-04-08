@@ -285,7 +285,7 @@ do
     fullcommands+=( "${TestAppFolders[i]}/EncoderApp $configsincommand -b ${outputbitstreams[i]} -o ${outputreconstructs[i]} $FrameCountArgument $IntraPeriod -q $QP > ${outputlogfiles[i]} &" )
   done
   for ((i = 0; i < $buildCount; i++)); do
-    echo ${fullcommand[i]}
+    echo ${fullcommands[i]}
   done
   cd $dataset/$class
 
@@ -317,7 +317,7 @@ do
   done
 
   # for ((i = 0; i < $buildCount; i++)); do
-  #   eval ${fullcommand[i]}
+  #   eval ${fullcommands[i]}
   # end
   # sleep 1m
 
