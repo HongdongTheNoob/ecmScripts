@@ -86,7 +86,7 @@ TestAppFolders=()
 for label in "${BuildLabels[@]}"; do
   Testfields+=( "$home_folder/outputs/$BuildLabels" )
   TestAppFolders+=( "$originaldirectory/App_$BuildLabels" )
-fi
+done
 
 if [ -z "$dataset" ]
 then
