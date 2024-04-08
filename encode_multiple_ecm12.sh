@@ -81,7 +81,7 @@ fi
 
 buildCount=${#BuildLabels[@]}
 for ((i = 0; i < $buildCount; i++)); do
-  echo ${BuildLabels[i]}
+  echo "${BuildLabels[i]}"
 done
 
 Testfields=()
