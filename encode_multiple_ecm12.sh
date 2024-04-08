@@ -47,7 +47,7 @@ while [ $# -gt 0 ]; do
       shift # past value
       ;;
     -b|--build_label)
-      read -ra BuildLabels <<< "$2"
+      read -a BuildLabels <<< "$2"
       shift # past argument
       shift # past value
       ;;
@@ -80,6 +80,9 @@ then
 fi
 
 buildCount=${#BuildLabels[@]}
+for ((i = 0; i < $buildCount; i++)); do
+  echo ${BuildLabels[i]}
+done
 
 Testfields=()
 TestAppFolders=()
@@ -124,7 +127,7 @@ do
 	echo "$encfg $Class $name $QP"
 
   OutputFolders=()
-  for ((i = 0; i < size; i++)); do
+  for ((i = 0; i < $buildCount; i++)); do
     OutputFolders+=( "$Testfields/$Class/$name" )
     $(mkdir -p "$Testfields/$Class/$name")
   done
