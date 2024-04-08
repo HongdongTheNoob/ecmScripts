@@ -286,7 +286,7 @@ do
   done
   for ((i = 0; i < $buildCount; i++)); do
     echo ${fullcommand[i]}
-  end
+  done
   cd $dataset/$class
 
   # monitor memory and processor usage
