@@ -101,7 +101,7 @@ fi
 
 echo "Process $txt line by line." 
 #echo "$Testfields"
-#echo "$dataset"
+echo "$dataset"
 while IFS= read -r line
 do
   # echo $line
@@ -291,7 +291,7 @@ do
   for ((i = 0; i < $buildCount; i++)); do
     echo ${fullcommands[i]}
   done
-  cd $dataset/$class
+  cd $dataset/$Class
 
   # monitor memory and processor usage
   while true
