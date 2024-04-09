@@ -71,7 +71,7 @@ process_limit=$((cores / 2))
 
 originaldirectory=$(pwd)
 home_folder="/data/hongdong.qin"
-cfgdirectory="$home_folder/ECM-12/cfg"
+cfgdirectory="$home_folder/ecm/cfg"
 
 # set default paths and convert relative paths to absolute paths
 if [ -z "$BuildLabels" ]
