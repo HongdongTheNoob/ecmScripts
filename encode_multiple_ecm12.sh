@@ -321,10 +321,10 @@ do
     fi
   done
 
-  # for ((i = 0; i < $buildCount; i++)); do
-  #   eval ${fullcommands[i]}
-  # done
-  # sleep 1m
+  for ((i = 0; i < $buildCount; i++)); do
+    eval ${fullcommands[i]}
+  done
+  sleep 1m
 
 done < "$txt"
 # done
