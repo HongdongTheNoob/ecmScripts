@@ -310,7 +310,8 @@ do
     # echo "percent:"
     # echo $percent
     process_count=$(pgrep -c EncoderApp | awk '{print $1}')
-    if [[ $percent -gt 80 || $process_count -ge $process_limit ]]
+    # if [[ $percent -gt 80 || $process_count -ge $process_limit ]]
+    if (( percent > 80 )) || (( process_count + buildCount >= process_limit ));
     then
         echo "usage too large, wait for 5 mins"
         sleep 5m
