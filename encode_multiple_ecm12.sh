@@ -322,7 +322,7 @@ do
 
   for ((i = 0; i < $buildCount; i++)); do
     eval ${fullcommands[i]}
-  end
+  done
   sleep 1m
 
 done < "$txt"
