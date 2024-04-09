@@ -134,6 +134,7 @@ do
 
   cd $originaldirectory
 
+  configfilelist=()
   # encoding configuration
   encodecfg=""
   if [ "$encfg" == "RA" ]; then
@@ -145,7 +146,7 @@ do
   elif [ "$encfg" == "AI" ]; then
   encodecfg="$cfgdirectory/encoder_intra_ecm.cfg"
   fi
-  configfilelist="$encodecfg"
+  configfilelist+=("$encodecfg")
 
   # configurations per-class
   # JVET-AF2017 Section 6
@@ -188,6 +189,9 @@ do
     ;;
     esac
   fi
+  if [ -n "$classcfg" ]; then
+    configfilelist+=("$classcfg")
+  fi
   
   # TODO
   # need to add specific config file into configfilelist ($cfgdirectory/per-sequence); find the corresponding configfile according to "name"
@@ -216,16 +220,13 @@ do
     echo "can not find sequencecfg"
     continue
   fi
-  configfilelist="$configfilelist $classcfg $sequencecfg"
-  # echo $classcfg
-  # echo $sequencecfg
-  # echo $configfilelist
+  # configfilelist="$configfilelist $classcfg $sequencecfg"
+  configfilelist+=("$sequencecfg")
   
   # add configuration files (absolute path) to command
-  configfilearray=($configfilelist)
+  # configfilearray=($configfilelist)
   configsincommand=""
-  for i in "${configfilearray[@]}"
-  do
+  for i in "${configfilelist[@]}"; do
     configsincommand="$configsincommand -c $i"
   done
 
@@ -320,10 +321,10 @@ do
     fi
   done
 
-  for ((i = 0; i < $buildCount; i++)); do
-    eval ${fullcommands[i]}
-  done
-  sleep 1m
+  # for ((i = 0; i < $buildCount; i++)); do
+  #   eval ${fullcommands[i]}
+  # done
+  # sleep 1m
 
 done < "$txt"
 # done
