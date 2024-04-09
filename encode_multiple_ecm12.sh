@@ -128,8 +128,8 @@ do
 
   OutputFolders=()
   for ((i = 0; i < $buildCount; i++)); do
-    OutputFolders+=( "$Testfields/$Class/$name" )
-    $(mkdir -p "$Testfields/$Class/$name")
+    OutputFolders+=( "${Testfields[i]}/$Class/$name" )
+    $(mkdir -p "${Testfields[i]}/$Class/$name")
   done
 
   cd $originaldirectory
