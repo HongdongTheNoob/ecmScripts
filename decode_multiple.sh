@@ -92,7 +92,7 @@ find "${output_folders[0]}" -type f -name "*.bin" | while read bin_file; do
     # Generate file names for the first build label
     log_file="${bin_file%.bin}-decode.txt"
     log_files+=($log_file)
-    if ! [ -z write_output ]; then
+    if ! [ -z $write_output ]; then
       yuv_file="${bin_file%.bin}.yuv"
     else
       yuv_file="\"\""
