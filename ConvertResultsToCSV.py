@@ -68,7 +68,7 @@ def search_files(directory, output_file):
 def search_files_decode(directory, output_file):
   with open(output_file, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow(['File Path', 'Decode Time', 'VM Peak'])
+    writer.writerow(['File Path', 'Decode Time', '', 'VM Peak'])
     for root, dirs, files in os.walk(directory):
       for file in files:
         if file.endswith('decode.txt'):
@@ -76,7 +76,7 @@ def search_files_decode(directory, output_file):
           with open(os.path.join(root, file), 'r') as txtfile:
             total_time = None
             memory_usage = None
-            row_values = [file_path, '', '']
+            row_values = [file_path, '', '', '']
             for line in txtfile:
               if line.startswith(' Total Time'):
                 total_time_match = re.search(r'(\d+\.\d+)', line)
@@ -89,7 +89,7 @@ def search_files_decode(directory, output_file):
             if total_time:
               row_values[1] = total_time
             if memory_usage:
-              row_values[2] = memory_usage
+              row_values[3] = memory_usage
             if total_time or memory_usage:  
               writer.writerow(row_values)
 
