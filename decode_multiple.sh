@@ -69,7 +69,7 @@ output_folders=()
 decoder_files=()
 for ((i = 0; i < $buildCount; i++)); do
   output_folders+=("$home_folder/outputs/${BuildLabels[i]}")
-  decoder_files+=("$home_folder/Preprocessing/App_${BuildLabels[i]}/DecoderApp")
+  decoder_files+=("$home_folder/ecmScripts/App_${BuildLabels[i]}/DecoderApp")
 done
 
 find "${output_folders[0]}" -type f -name "*.bin" | while read bin_file; do
@@ -111,7 +111,7 @@ find "${output_folders[0]}" -type f -name "*.bin" | while read bin_file; do
 
     # Compose decoding command
     for ((i = 0; i < $buildCount; i++)); do
-      decode_command="${decoder_files[i]} -b ${bin_file[i]} -o ${yuv_file[i]} > ${log_file[i]}"
+      decode_command="${decoder_files[i]} -b ${bin_files[i]} -o ${yuv_files[i]} > ${log_files[i]}"
       if (( i + 1 < $buildCount )); then
         decode_command="$decode_command &"
       fi
