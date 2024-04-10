@@ -22,7 +22,7 @@ IFS=','
 while [[ $# -gt 0 ]]; do
   case $1 in
     -b|--build)
-      build="$2"
+      read -a BuildLabels <<< "$2"
       shift # past argument
       shift # past value
       ;;
