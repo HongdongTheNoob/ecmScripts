@@ -119,9 +119,10 @@ find "${output_folders[0]}" -type f -name "*.bin" | while read bin_file; do
     done
 
     # Evaluate
+    echo "Processing ${bin_files[0]}"
     for ((i = 0; i < $buildCount; i++)); do
-      echo ${decode_commands[i]}
-      # eval ${decode_commands[i]}
+      # echo ${decode_commands[i]}
+      eval ${decode_commands[i]}
     done
   fi
 done
