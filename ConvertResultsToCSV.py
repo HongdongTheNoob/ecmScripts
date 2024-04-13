@@ -18,7 +18,6 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
 
 def csv_file_reordering(df):
   new_df = pd.DataFrame(index=df.index)
-  print(new_df.index.tolist())
   empty_df = pd.DataFrame(columns=new_df.columns)
   for _ in range(480):
     new_df = pd.concat([new_df, empty_df])
@@ -102,7 +101,7 @@ def search_files(directory, output_file):
   # df = df.sort_values(by=['File Path Upper'], ascending = True)
   # del df['File Path Upper']
   # df.to_csv(output_file, index = False)
-  df = pd.read_csv(output_file, index_col=0)
+  df = pd.read_csv(output_file, header=0)
   new_df = csv_file_reordering(df)
   df.to_csv(output_file, index = False)
 
