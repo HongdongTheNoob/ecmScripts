@@ -32,7 +32,7 @@ def csv_file_reordering(df):
       assign_index += 360
 
     for i in range(len(sequence_names)):
-      if '/' + sequence_names[i] + '/' in file_path:
+      if '/' + sequence_names[i] in file_path:
         assign_index += 4 * i
         break
 
@@ -40,7 +40,7 @@ def csv_file_reordering(df):
       assign_index += 1
     elif '-32.txt' in file_path:
       assign_index += 2
-    elif '-37,txt' in file_path:
+    elif '-37.txt' in file_path:
       assign_index += 3
 
     new_df.iloc[assign_index] = row
