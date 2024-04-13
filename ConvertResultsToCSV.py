@@ -102,7 +102,7 @@ def search_files(directory, output_file):
   # df.to_csv(output_file, index = False)
   df = pd.read_csv(output_file, header=0)
   new_df = csv_file_reordering(df)
-  new_df.to_csv(output_file, index = False)
+  new_df.to_csv(output_file, index = False, header = False)
 
 # def search_split_files(output_file):
 #   with open(output_file, 'a', newline='') as csvfile:
@@ -136,11 +136,14 @@ def search_files_decode(directory, output_file):
             if total_time or memory_usage:  
               writer.writerow(row_values)
 
-  df = pd.read_csv(output_file)
-  df['File Path Upper'] = df['File Path'].str.upper()
-  df = df.sort_values(by=['File Path Upper'], ascending = True)
-  del df['File Path Upper']
-  df.to_csv(output_file, index = False)
+  # df = pd.read_csv(output_file)
+  # df['File Path Upper'] = df['File Path'].str.upper()
+  # df = df.sort_values(by=['File Path Upper'], ascending = True)
+  # del df['File Path Upper']
+  # df.to_csv(output_file, index = False)
+  df = pd.read_csv(output_file, header=0)
+  new_df = csv_file_reordering(df)
+  new_df.to_csv(output_file, index = False, header = False)
 
 
 if __name__ == '__main__':
