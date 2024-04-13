@@ -15,7 +15,7 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
                   'BasketballPass', 'BQSquare', 'BlowingBubbles', 'RaceHorses',
                   'FourPeople', 'Johnny', 'KristenAndSara', 
                   'BasketballDrillText', 'ArenaOfValor', 'SlideEditing', 'SlideShow',
-                  'FlyingGraphic', 'Desktop', 'Console', 'ChineseEditing']
+                  'FlyingGraphics_420', 'Desktop_420', 'Console_420', 'ChineseEditing']
 
 def csv_file_reordering(df):
   new_df = pd.DataFrame(columns=df.columns)
@@ -32,7 +32,7 @@ def csv_file_reordering(df):
       assign_index += 360
 
     for i in range(len(sequence_names)):
-      if '/' + sequence_names[i] in file_path:
+      if '/' + sequence_names[i] + '/' in file_path:
         assign_index += 4 * i
         break
 
