@@ -17,11 +17,10 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
                   'FlyingGraphic', 'Desktop', 'Console', 'ChineseEditing']
 
 def csv_file_reordering(df):
-  new_df = pd.DataFrame(index=df.index)
-  empty_df = pd.DataFrame(columns=new_df.columns)
+  new_df = pd.DataFrame(columns=df.columns)
+  empty_df = pd.DataFrame(columns=df.columns)
   for _ in range(480):
     new_df = pd.concat([new_df, empty_df])
-  print(df.iloc[0].count(), new_df.iloc[0].count())
   for index, row in df.iterrows():
     file_path = row['File Path']
     assign_index = 0
