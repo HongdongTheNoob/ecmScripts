@@ -7,6 +7,43 @@ import pandas as pd
 split_tasks = []
 split_task_files = []
 
+sequence_names = ['Tango2', 'FoodMarket4', 'Campfire', 
+                  'CatRobot', 'DaylightRoad2', 'ParkRunning3',
+                  'MarketPlace', 'RitualDance', 'Cactus', 'BasketballDrive', 'BQTerrace',
+                  'BasketballDrill', 'BQMall', 'PartyScene', 'RaceHorsesC',
+                  'BasketballPass', 'BQSquare', 'BlowingBubbles', 'RaceHorses',
+                  'FourPeople', 'Johnny', 'KristenAndSara', 
+                  'BasketballDrillText', 'ArenaOfValor', 'SlideEditing', 'SlideShow',
+                  'FlyingGraphic', 'Desktop', 'Console', 'ChineseEditing']
+
+def csv_file_reordering(df):
+  new_df = pd.DataFrame(index=df.index, rows=480)
+  for index, row in df.iterrows():
+    file_path = row['File Path']
+    assign_index = 0
+    if '-RA-' in file_path:
+      assign_index += 120
+    elif '-LB-' in file_path:
+      assign_index += 240
+    elif '-LP-' in file_path:
+      assign_index += 360
+
+    for i in range(len(sequence_names)):
+      if '/' + sequence_names[i] + '/' in file_path:
+        assign_index += 4 * i
+        break
+
+    if '-27.txt' in file_path:
+      assign_index += 1
+    elif '-32.txt' in file_path:
+      assign_index += 2
+    elif '-37,txt' in file_path:
+      assign_index += 3
+
+    new_df.loc[assign_index] = row
+
+  return new_df
+
 def search_files(directory, output_file):
   with open(output_file, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
@@ -55,10 +92,13 @@ def search_files(directory, output_file):
               row_values.append(vm_peak)
               writer.writerow(row_values)
 
-  df = pd.read_csv(output_file)
-  df['File Path Upper'] = df['File Path'].str.upper()
-  df = df.sort_values(by=['File Path Upper'], ascending = True)
-  del df['File Path Upper']
+  # df = pd.read_csv(output_file)
+  # df['File Path Upper'] = df['File Path'].str.upper()
+  # df = df.sort_values(by=['File Path Upper'], ascending = True)
+  # del df['File Path Upper']
+  # df.to_csv(output_file, index = False)
+  df = pd.read_csv(output_file, index_col=0)
+  new_df = csv_file_reordering(df)
   df.to_csv(output_file, index = False)
 
 # def search_split_files(output_file):
@@ -98,6 +138,7 @@ def search_files_decode(directory, output_file):
   df = df.sort_values(by=['File Path Upper'], ascending = True)
   del df['File Path Upper']
   df.to_csv(output_file, index = False)
+
 
 if __name__ == '__main__':
   if len(sys.argv) < 3:
