@@ -18,8 +18,9 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
 
 def csv_file_reordering(df):
   new_df = pd.DataFrame(index=df.index)
+  empty_df = pd.DataFrame(columns=new_df.columns)
   for _ in range(480):
-    new_df = new_df.append(pd.Series(), ignore_index=True)
+    new_df = pd.concat([new_df, empty_df])
 
   for index, row in df.iterrows():
     file_path = row['File Path']
