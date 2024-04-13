@@ -3,6 +3,7 @@ import sys
 import csv
 import re
 import pandas as pd
+import numpy as np
 
 split_tasks = []
 split_task_files = []
@@ -18,9 +19,9 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
 
 def csv_file_reordering(df):
   new_df = pd.DataFrame(columns=df.columns)
-  empty_df = pd.DataFrame(columns=df.columns)
   for _ in range(480):
-    new_df = pd.concat([new_df, empty_df])
+    new_df.loc[len(new_df)] = [''] * len(new_df.columns)
+  print(len(new_df))
   for index, row in df.iterrows():
     file_path = row['File Path']
     assign_index = 0
