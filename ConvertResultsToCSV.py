@@ -21,7 +21,6 @@ def csv_file_reordering(df):
   new_df = pd.DataFrame(columns=df.columns)
   for _ in range(480):
     new_df.loc[len(new_df)] = [''] * len(new_df.columns)
-  print(len(new_df))
   for index, row in df.iterrows():
     file_path = row['File Path']
     assign_index = 0
