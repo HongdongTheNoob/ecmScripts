@@ -102,7 +102,7 @@ def search_files(directory, output_file):
   # df.to_csv(output_file, index = False)
   df = pd.read_csv(output_file, header=0)
   new_df = csv_file_reordering(df)
-  df.to_csv(output_file, index = False)
+  new_df.to_csv(output_file, index = False)
 
 # def search_split_files(output_file):
 #   with open(output_file, 'a', newline='') as csvfile:
