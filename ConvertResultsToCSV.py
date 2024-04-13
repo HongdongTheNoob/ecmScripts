@@ -44,7 +44,7 @@ def csv_file_reordering(df):
     elif '-37,txt' in file_path:
       assign_index += 3
 
-    new_df.loc[assign_index] = row
+    new_df.iloc[assign_index] = row
 
   return new_df
 
