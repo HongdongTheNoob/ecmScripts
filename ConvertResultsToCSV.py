@@ -15,7 +15,7 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
                   'BasketballPass', 'BQSquare', 'BlowingBubbles', 'RaceHorses',
                   'FourPeople', 'Johnny', 'KristenAndSara', 
                   'BasketballDrillText', 'ArenaOfValor', 'SlideEditing', 'SlideShow',
-                  'FlyingGraphics_420', 'Desktop_420', 'Console_420', 'ChineseEditing']
+                  'FlyingGraphics_420', 'Desktop_420', 'Console_420', 'ChineseEditing_420']
 
 def csv_file_reordering(df):
   new_df = pd.DataFrame(columns=df.columns)
