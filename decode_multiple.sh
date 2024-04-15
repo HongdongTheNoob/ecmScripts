@@ -76,10 +76,13 @@ find "${output_folders[0]}" -type f -name "*.bin" | while read bin_file; do
   # Loop through folder in the first build label
   if [[ "$bin_file" == *"$class_string"*"-$config-"* ]]; then
     # Check if it's a split file
-    integer_count=$(echo $(basename "$bin_file") | grep -oE '[0-9]+' | wc -l)
-    if (( "$config" == "RA" )) && (( "$integer_count" > 1 )); then # is split file, skip
-      echo "Skipping $bin_file"
-      continue
+    if (( "$config" == "RA" )); then
+      extracted_part=$(echo $(basename "$bin_file") | awk -F"-$config-" '{print $2}')
+      integer_count=$(echo "$extracted_part" | grep -oE '[0-9]+' | wc -l)
+      if [[ "$integer_count" -gt 1 ]]; then # is split file, skip
+        echo "Skipping $bin_file"
+        continue
+      fi
     fi
     
     log_files=()
