@@ -43,6 +43,13 @@ def csv_file_reordering(df):
     elif '-37.txt' in file_path:
       assign_index += 3
 
+    if '-27-decode.txt' in file_path:
+      assign_index += 1
+    elif '-32-decode.txt' in file_path:
+      assign_index += 2
+    elif '-37-decode.txt' in file_path:
+      assign_index += 3
+
     new_df.iloc[assign_index] = row
 
   return new_df
