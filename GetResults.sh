@@ -15,10 +15,13 @@ then
   exit 1
 fi
 
+Folders=()
+IFS=','
+
 while [[ $# -gt 0 ]]; do
   case $1 in
     -f|--folder)
-      folder="$2"
+      read -a Folders <<< "$2"
       shift # past argument
       shift # past value
       ;;
@@ -46,37 +49,42 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo "Collect and convert results"
-if [ "$uploadbitstream" == "1" ];
-then
-  eval "python3 ./CollectResults.py -l -b -s $folder"
-else
-  eval "python3 ./CollectResults.py -l -s $folder"
-fi
-if [ "$uploaddecoderesults" == "1" ];
-then
-  eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv 1"
-else
-  eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv"
-fi
 
-if [ ! -z "$ONEDRIVE_FOLDER" ];
-then
-  if [ "$uploadlogfile" == "1" ];
-  then
-    echo "Upload log files"
-    eval "rclone copy ./Results/$folder onedrive-hongdong:$ONEDRIVE_FOLDER/Results/$folder"
-  fi
+for folder in "${Folders[@]}"
+do
   if [ "$uploadbitstream" == "1" ];
   then
-    echo "Upload bitstreams"
-    eval "rclone copy ./Bitstreams/$folder onedrive-hongdong:$ONEDRIVE_FOLDER/Bitstreams/$folder"
+    eval "python3 ./CollectResults.py -l -b -s $folder"
+  else
+    eval "python3 ./CollectResults.py -l -s $folder"
   fi
-  echo "Upload results"
-  eval "rclone copy ./Analysis/$folder.csv onedrive-hongdong:$ONEDRIVE_FOLDER/Analysis"
   if [ "$uploaddecoderesults" == "1" ];
   then
-    eval "rclone copy ./Analysis/$folder-decode.csv onedrive-hongdong:$ONEDRIVE_FOLDER/Analysis"
+    eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv 1"
+  else
+    eval "python3 ./ConvertResultsToCSV.py ./Results/$folder ./Analysis/$folder.csv"
   fi
-fi
+done
+
+# if [ ! -z "$ONEDRIVE_FOLDER" ];
+# then
+#   if [ "$uploadlogfile" == "1" ];
+#   then
+#     echo "Upload log files"
+#     eval "rclone copy ./Results/$folder onedrive-hongdong:$ONEDRIVE_FOLDER/Results/$folder"
+#   fi
+#   if [ "$uploadbitstream" == "1" ];
+#   then
+#     echo "Upload bitstreams"
+#     eval "rclone copy ./Bitstreams/$folder onedrive-hongdong:$ONEDRIVE_FOLDER/Bitstreams/$folder"
+#   fi
+#   echo "Upload results"
+#   eval "rclone copy ./Analysis/$folder.csv onedrive-hongdong:$ONEDRIVE_FOLDER/Analysis"
+#   if [ "$uploaddecoderesults" == "1" ];
+#   then
+#     eval "rclone copy ./Analysis/$folder-decode.csv onedrive-hongdong:$ONEDRIVE_FOLDER/Analysis"
+#   fi
+# fi
+
 echo "Done"
 
