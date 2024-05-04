@@ -126,7 +126,16 @@ RA Class B Cactus 32 256 65
 RA Class B Cactus 32 320 65
 RA Class B Cactus 32 384 65
 RA Class B Cactus 32 448 52
-RA Class B RitualDance 37
+RA Class B RitualDance 37 0 65
+RA Class B RitualDance 37 64 65
+RA Class B RitualDance 37 128 65
+RA Class B RitualDance 37 192 65
+RA Class B RitualDance 37 256 65
+RA Class B RitualDance 37 320 65
+RA Class B RitualDance 37 384 65
+RA Class B RitualDance 37 448 65
+RA Class B RitualDance 37 512 65
+RA Class B RitualDance 37 576 24
 RA Class B BQTerrace 32 0 65
 RA Class B BQTerrace 32 64 65
 RA Class B BQTerrace 32 128 65
@@ -137,7 +146,39 @@ RA Class B BQTerrace 32 384 65
 RA Class B BQTerrace 32 448 65
 RA Class B BQTerrace 32 512 65
 RA Class B BQTerrace 32 576 24
-RA Class B MarketPlace 37
-RA Class B BasketballDrive 37
-RA Class B Cactus 37
-RA Class B BQTerrace 37
+RA Class B MarketPlace 37 0 65
+RA Class B MarketPlace 37 64 65
+RA Class B MarketPlace 37 128 65
+RA Class B MarketPlace 37 192 65
+RA Class B MarketPlace 37 256 65
+RA Class B MarketPlace 37 320 65
+RA Class B MarketPlace 37 384 65
+RA Class B MarketPlace 37 448 65
+RA Class B MarketPlace 37 512 65
+RA Class B MarketPlace 37 576 24
+RA Class B BasketballDrive 37 0 65
+RA Class B BasketballDrive 37 64 65
+RA Class B BasketballDrive 37 128 65
+RA Class B BasketballDrive 37 192 65
+RA Class B BasketballDrive 37 256 65
+RA Class B BasketballDrive 37 320 65
+RA Class B BasketballDrive 37 384 65
+RA Class B BasketballDrive 37 448 52
+RA Class B Cactus 37 0 65
+RA Class B Cactus 37 64 65
+RA Class B Cactus 37 128 65
+RA Class B Cactus 37 192 65
+RA Class B Cactus 37 256 65
+RA Class B Cactus 37 320 65
+RA Class B Cactus 37 384 65
+RA Class B Cactus 37 448 52
+RA Class B BQTerrace 37 0 65
+RA Class B BQTerrace 37 64 65
+RA Class B BQTerrace 37 128 65
+RA Class B BQTerrace 37 192 65
+RA Class B BQTerrace 37 256 65
+RA Class B BQTerrace 37 320 65
+RA Class B BQTerrace 37 384 65
+RA Class B BQTerrace 37 448 65
+RA Class B BQTerrace 37 512 65
+RA Class B BQTerrace 37 576 24

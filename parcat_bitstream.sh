@@ -86,8 +86,10 @@ while read -r bin_file; do
     fi    
     
     # Check if it's a split file
-    integer_count=$(echo "$bin_file" | awk -F'/' '{print $NF}' | grep -oE '[0-9]+' | wc -l)
+    # integer_count=$(echo "$bin_file" | awk -F'/' '{print $NF}' | grep -oE '[0-9]+' | wc -l)
 
+    extracted_part=$(echo $(basename "$bin_file") | awk -F"-RA-" '{print $2}')
+    integer_count=$(echo "$extracted_part" | grep -oE '[0-9]+' | wc -l)
 
     if [ "$integer_count" -ge 2 ]; then # is split, run parcat
         all_split_files+=("$bin_file")

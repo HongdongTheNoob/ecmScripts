@@ -8,17 +8,133 @@ RA	Class TGM	FlyingGraphics_420	27 64 65
 RA	Class TGM	FlyingGraphics_420	27 128 65
 RA	Class TGM	FlyingGraphics_420	27 192 65
 RA	Class TGM	FlyingGraphics_420	27 256 44
-RA	Class TGM	FlyingGraphics_420	32
-RA	Class TGM	Console_420	22
-RA	Class TGM	Console_420	27
-RA	Class TGM	FlyingGraphics_420	37
-RA	Class TGM	Console_420	32
-RA	Class TGM	Console_420	37
-RA	Class TGM	ChineseEditing_420	22
-RA	Class TGM	ChineseEditing_420	27
-RA	Class TGM	Desktop_420	22
-RA	Class TGM	Desktop_420	27
-RA	Class TGM	ChineseEditing_420	32
-RA	Class TGM	Desktop_420	32
-RA	Class TGM	ChineseEditing_420	37
-RA	Class TGM	Desktop_420	37
+RA	Class TGM	FlyingGraphics_420	32 0 65
+RA	Class TGM	FlyingGraphics_420	32 64 65
+RA	Class TGM	FlyingGraphics_420	32 128 65
+RA	Class TGM	FlyingGraphics_420	32 192 65
+RA	Class TGM	FlyingGraphics_420	32 256 44
+RA	Class TGM	Console_420	22 0 65
+RA	Class TGM	Console_420	22 64 65
+RA	Class TGM	Console_420	22 128 65
+RA	Class TGM	Console_420	22 192 65
+RA	Class TGM	Console_420	22 256 65
+RA	Class TGM	Console_420	22 320 65
+RA	Class TGM	Console_420	22 384 65
+RA	Class TGM	Console_420	22 448 65
+RA	Class TGM	Console_420	22 512 65
+RA	Class TGM	Console_420	22 576 24
+RA	Class TGM	Console_420	27 0 65
+RA	Class TGM	Console_420	27 64 65
+RA	Class TGM	Console_420	27 128 65
+RA	Class TGM	Console_420	27 192 65
+RA	Class TGM	Console_420	27 256 65
+RA	Class TGM	Console_420	27 320 65
+RA	Class TGM	Console_420	27 384 65
+RA	Class TGM	Console_420	27 448 65
+RA	Class TGM	Console_420	27 512 65
+RA	Class TGM	Console_420	27 576 24
+RA	Class TGM	FlyingGraphics_420	37 0 65
+RA	Class TGM	FlyingGraphics_420	37 64 65
+RA	Class TGM	FlyingGraphics_420	37 128 65
+RA	Class TGM	FlyingGraphics_420	37 192 65
+RA	Class TGM	FlyingGraphics_420	37 256 44
+RA	Class TGM	Console_420	32 0 65
+RA	Class TGM	Console_420	32 64 65
+RA	Class TGM	Console_420	32 128 65
+RA	Class TGM	Console_420	32 192 65
+RA	Class TGM	Console_420	32 256 65
+RA	Class TGM	Console_420	32 320 65
+RA	Class TGM	Console_420	32 384 65
+RA	Class TGM	Console_420	32 448 65
+RA	Class TGM	Console_420	32 512 65
+RA	Class TGM	Console_420	32 576 24
+RA	Class TGM	Console_420	37 0 65
+RA	Class TGM	Console_420	37 64 65
+RA	Class TGM	Console_420	37 128 65
+RA	Class TGM	Console_420	37 192 65
+RA	Class TGM	Console_420	37 256 65
+RA	Class TGM	Console_420	37 320 65
+RA	Class TGM	Console_420	37 384 65
+RA	Class TGM	Console_420	37 448 65
+RA	Class TGM	Console_420	37 512 65
+RA	Class TGM	Console_420	37 576 24
+RA	Class TGM	ChineseEditing_420	22 0 65
+RA	Class TGM	ChineseEditing_420	22 64 65
+RA	Class TGM	ChineseEditing_420	22 128 65
+RA	Class TGM	ChineseEditing_420	22 192 65
+RA	Class TGM	ChineseEditing_420	22 256 65
+RA	Class TGM	ChineseEditing_420	22 320 65
+RA	Class TGM	ChineseEditing_420	22 384 65
+RA	Class TGM	ChineseEditing_420	22 448 65
+RA	Class TGM	ChineseEditing_420	22 512 65
+RA	Class TGM	ChineseEditing_420	22 576 24
+RA	Class TGM	ChineseEditing_420	27 0 65
+RA	Class TGM	ChineseEditing_420	27 64 65
+RA	Class TGM	ChineseEditing_420	27 128 65
+RA	Class TGM	ChineseEditing_420	27 192 65
+RA	Class TGM	ChineseEditing_420	27 256 65
+RA	Class TGM	ChineseEditing_420	27 320 65
+RA	Class TGM	ChineseEditing_420	27 384 65
+RA	Class TGM	ChineseEditing_420	27 448 65
+RA	Class TGM	ChineseEditing_420	27 512 65
+RA	Class TGM	ChineseEditing_420	27 576 24
+RA	Class TGM	Desktop_420	22 0 65
+RA	Class TGM	Desktop_420	22 64 65
+RA	Class TGM	Desktop_420	22 128 65
+RA	Class TGM	Desktop_420	22 192 65
+RA	Class TGM	Desktop_420	22 256 65
+RA	Class TGM	Desktop_420	22 320 65
+RA	Class TGM	Desktop_420	22 384 65
+RA	Class TGM	Desktop_420	22 448 65
+RA	Class TGM	Desktop_420	22 512 65
+RA	Class TGM	Desktop_420	22 576 24
+RA	Class TGM	Desktop_420	27 0 65
+RA	Class TGM	Desktop_420	27 64 65
+RA	Class TGM	Desktop_420	27 128 65
+RA	Class TGM	Desktop_420	27 192 65
+RA	Class TGM	Desktop_420	27 256 65
+RA	Class TGM	Desktop_420	27 320 65
+RA	Class TGM	Desktop_420	27 384 65
+RA	Class TGM	Desktop_420	27 448 65
+RA	Class TGM	Desktop_420	27 512 65
+RA	Class TGM	Desktop_420	27 576 24
+RA	Class TGM	ChineseEditing_420	32 0 65
+RA	Class TGM	ChineseEditing_420	32 64 65
+RA	Class TGM	ChineseEditing_420	32 128 65
+RA	Class TGM	ChineseEditing_420	32 192 65
+RA	Class TGM	ChineseEditing_420	32 256 65
+RA	Class TGM	ChineseEditing_420	32 320 65
+RA	Class TGM	ChineseEditing_420	32 384 65
+RA	Class TGM	ChineseEditing_420	32 448 65
+RA	Class TGM	ChineseEditing_420	32 512 65
+RA	Class TGM	ChineseEditing_420	32 576 24
+RA	Class TGM	Desktop_420	32 0 65
+RA	Class TGM	Desktop_420	32 64 65
+RA	Class TGM	Desktop_420	32 128 65
+RA	Class TGM	Desktop_420	32 192 65
+RA	Class TGM	Desktop_420	32 256 65
+RA	Class TGM	Desktop_420	32 320 65
+RA	Class TGM	Desktop_420	32 384 65
+RA	Class TGM	Desktop_420	32 448 65
+RA	Class TGM	Desktop_420	32 512 65
+RA	Class TGM	Desktop_420	32 576 24
+RA	Class TGM	ChineseEditing_420	37 0 65
+RA	Class TGM	ChineseEditing_420	37 64 65
+RA	Class TGM	ChineseEditing_420	37 128 65
+RA	Class TGM	ChineseEditing_420	37 192 65
+RA	Class TGM	ChineseEditing_420	37 256 65
+RA	Class TGM	ChineseEditing_420	37 320 65
+RA	Class TGM	ChineseEditing_420	37 384 65
+RA	Class TGM	ChineseEditing_420	37 448 65
+RA	Class TGM	ChineseEditing_420	37 512 65
+RA	Class TGM	ChineseEditing_420	37 576 24
+RA	Class TGM	Desktop_420	37 0 65
+RA	Class TGM	Desktop_420	37 64 65
+RA	Class TGM	Desktop_420	37 128 65
+RA	Class TGM	Desktop_420	37 192 65
+RA	Class TGM	Desktop_420	37 256 65
+RA	Class TGM	Desktop_420	37 320 65
+RA	Class TGM	Desktop_420	37 384 65
+RA	Class TGM	Desktop_420	37 448 65
+RA	Class TGM	Desktop_420	37 512 65
+RA	Class TGM	Desktop_420	37 576 24
