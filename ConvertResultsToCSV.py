@@ -195,6 +195,7 @@ def search_split_files(directory, output_file):
           split_log_files = []
           for root, dirs, files in os.walk(video_directory):
             for file in files:
+              print(file)
               if ~file.endswith('.txt'):
                 continue
               if file.endswith('decode.txt'):
@@ -202,7 +203,6 @@ def search_split_files(directory, output_file):
               if "-RA-" not in file:
                 continue
               qp_and_frame_number = extract_after_last_ra(file)
-              print(qp_and_frame_number)
               if qp != qp_and_frame_number.split('-')[0]:
                 continue
               if count_integers(qp_and_frame_number) < 2:
