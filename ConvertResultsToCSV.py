@@ -4,6 +4,11 @@ import csv
 import re
 import pandas as pd
 import numpy as np
+import struct
+import binascii
+
+def hex2double(str):
+  return struct.unpack('>d', binascii.unhexlify(str))[0]
 
 # split_tasks = []
 # split_task_files = []
@@ -186,7 +191,6 @@ def search_split_files(directory, output_file):
       for sequence in video_sequences[video_class]:
         video_directory = os.path.join(directory, "Class" + video_class, sequence)
         for qp in qps:
-          print("Checking RA", sequence, qp, video_directory)
           split_log_files = []
           for root, dirs, files in os.walk(video_directory):
             for file in files:
@@ -206,7 +210,6 @@ def search_split_files(directory, output_file):
           if len(split_log_files) == 0:
             continue
           
-          print("Processing RA", sequence, qp)
           # rank
           split_log_files = sorted(split_log_files, key = sort_frame_number)
 
@@ -226,16 +229,12 @@ def search_split_files(directory, output_file):
                     found_first = True
                     continue
                   total_bits += int(match_bits.group(1))
-                  xY_hex = match_psnr.group(1)
-                  xU_hex = match_psnr.group(2)
-                  xV_hex = match_psnr.group(3)
-                  y_PSNR_sum += np.float64(int(xY_hex, 16))
-                  u_PSNR_sum += np.float64(int(xU_hex, 16))
-                  v_PSNR_sum += np.float64(int(xV_hex, 16))
+                  y_PSNR_sum += hex2double(match_psnr.group(1))
+                  u_PSNR_sum += hex2double(match_psnr.group(2))
+                  v_PSNR_sum += hex2double(match_psnr.group(3))
                   frame_count += 1
 
           task_string = os.path.join("Class" + video_class, sequence, "log-" + sequence + "-RA-" + qp + ".txt")
-          print(task_string, total_bits, y_PSNR_sum, u_PSNR_sum, v_PSNR_sum, frame_count, video_frame_rates[sequence])
           row_values = [task_string, '', str(float(total_bits)/(frame_count * video_frame_rates[sequence])), str(y_PSNR_sum/frame_count), str(u_PSNR_sum/frame_count), str(v_PSNR_sum/frame_count), '', '']
           writer.writerow(row_values)
       
