@@ -211,7 +211,7 @@ def search_split_files(directory, output_file):
           y_PSNR_sum = 0.0
           u_PSNR_sum = 0.0
           v_PSNR_sum = 0.0
-          for i in len(split_log_files):
+          for i in range(len(split_log_files)):
             with open(split_log_files[i], 'r') as txtfile:
               found_first = False
               for line in txtfile:
