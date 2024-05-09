@@ -212,6 +212,8 @@ def search_split_files(directory, output_file):
           
           # rank
           split_log_files = sorted(split_log_files, key = sort_frame_number)
+          for f in split_log_files:
+            print(f)
 
           frame_count = 0
           total_bits = 0
