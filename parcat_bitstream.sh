@@ -37,10 +37,13 @@ then
   exit 1
 fi
 
+BuildLabels=()
+IFS=','
+
 while [[ $# -gt 0 ]]; do
   case $1 in
     -b|--build)
-      build="$2"
+      read -a BuildLabels <<< "$2"
       shift # past argument
       shift # past value
       ;;
@@ -69,61 +72,70 @@ then
     class_string="Class$class"
 fi
 
-# Loop recursively through the folder and its subfolders
-home_folder="/data"
-output_folder="$home_folder/outputs/$build"
-decoder_file="$home_folder/Preprocessing/App_$build/DecoderApp"
-decoder_ecm_file="$home_folder/Preprocessing/App_ECM11/DecoderApp"
-parcat_file="$home_folder/Preprocessing/App_$build/parcat"
-all_tasks=()
-all_split_files=()
+if [ -z "$BuildLabels" ]
+then
+  exit 1
+fi
 
-echo "loop through $output_folder"
-# parcat split file
-while read -r bin_file; do
-    if [[ "$bin_file" != *"$class_string"*"-RA-"* ]]; then
-        continue
-    fi    
-    
-    # Check if it's a split file
-    # integer_count=$(echo "$bin_file" | awk -F'/' '{print $NF}' | grep -oE '[0-9]+' | wc -l)
+buildCount=${#BuildLabels[@]}
 
-    extracted_part=$(echo $(basename "$bin_file") | awk -F"-RA-" '{print $2}')
-    integer_count=$(echo "$extracted_part" | grep -oE '[0-9]+' | wc -l)
+for ((i = 0; i < $buildCount; i++)); do
+  build=${BuildLabels[i]}
+  
+  home_folder="/data/hongdong.qin"
+  output_folder="$home_folder/outputs/$build"
+  decoder_file="$home_folder/ecmScripts/App_$build/DecoderApp"
+  parcat_file="$home_folder/ecmScripts/App_$build/parcat"
+  all_tasks=()
+  all_split_files=()
 
-    if [ "$integer_count" -ge 2 ]; then # is split, run parcat
-        all_split_files+=("$bin_file")
-        check_string="${bin_file%-*}"
-        	
-        if [[ " ${all_tasks[@]} " =~ " $check_string " ]]; then
-            continue
-        else
-            echo $check_string
-            all_tasks+=("$check_string")
-        fi
-    fi
-done < <(find "$output_folder" -type f -name "*.bin")
+  echo "loop through $output_folder"
+  # parcat split file
+  while read -r bin_file; do
+      if [[ "$bin_file" != *"$class_string"*"-RA-"* ]]; then
+          continue
+      fi    
+      
+      # Check if it's a split file
+      # integer_count=$(echo "$bin_file" | awk -F'/' '{print $NF}' | grep -oE '[0-9]+' | wc -l)
 
-# Iterate through each element in list A
-for task in "${all_tasks[@]}"; do
-    # Initialize an array to store items from list B containing the current elementA
-    split_files=()
+      extracted_part=$(echo $(basename "$bin_file") | awk -F"-RA-" '{print $2}')
+      integer_count=$(echo "$extracted_part" | grep -oE '[0-9]+' | wc -l)
 
-    # Iterate through each element in list B
-    for split_file in "${all_split_files[@]}"; do
-        # Check if the current elementB contains the current elementA
-        if [[ "$split_file" == *"$task"* ]]; then
-            # If yes, add it to the matchingItems array
-            split_files+=("$split_file")
-        fi
-    done
-    
-    sorted_split_files=($(split_files_sort "${split_files[@]}"))
-    concatenated_split_files=$(IFS=' '; echo "${sorted_split_files[*]}")
-    output_file="$task.bin"
+      if [ "$integer_count" -ge 2 ]; then # is split, run parcat
+          all_split_files+=("$bin_file")
+          check_string="${bin_file%-*}"
+            
+          if [[ " ${all_tasks[@]} " =~ " $check_string " ]]; then
+              continue
+          else
+              echo $check_string
+              all_tasks+=("$check_string")
+          fi
+      fi
+  done < <(find "$output_folder" -type f -name "*.bin")
 
-    command="$parcat_file $concatenated_split_files $output_file"
-    echo $command
-    eval $command
+  # Iterate through each element in list A
+  for task in "${all_tasks[@]}"; do
+      # Initialize an array to store items from list B containing the current elementA
+      split_files=()
+
+      # Iterate through each element in list B
+      for split_file in "${all_split_files[@]}"; do
+          # Check if the current elementB contains the current elementA
+          if [[ "$split_file" == *"$task"* ]]; then
+              # If yes, add it to the matchingItems array
+              split_files+=("$split_file")
+          fi
+      done
+      
+      sorted_split_files=($(split_files_sort "${split_files[@]}"))
+      concatenated_split_files=$(IFS=' '; echo "${sorted_split_files[*]}")
+      output_file="$task.bin"
+
+      command="$parcat_file $concatenated_split_files $output_file"
+      echo $command
+      eval $command
+  done
+
 done
-
