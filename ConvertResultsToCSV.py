@@ -219,7 +219,7 @@ def search_split_files(directory, output_file):
             with open(split_log_files[i], 'r') as txtfile:
               found_first = False
               for line in txtfile:
-                match_bits = re.search(r"(\d+) bits")
+                match_bits = re.search(r"(\d+) bits", line)
                 match_psnr = re.search(r"xY (\w{16}) xU (\w{16}) xV (\w{16})", line)
                 if match_bits and match_psnr:
                   if (not found_first) and i > 0: # discard first frame
