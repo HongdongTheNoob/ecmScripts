@@ -71,13 +71,8 @@ def extract_after_last_ra(string):
         return None  # Handle case when "-RA-" is not found
 
 def count_integers(string):
-    # Split the string based on non-numeric characters
-    parts = string.split("-")
-
-    # Count the number of parts that are integers
-    count = sum(1 for part in parts if part.isdigit())
-
-    return count
+    integers = re.findall(r'\d+', string)
+    return len(integers)
 
 def sort_frame_number(item):
     # Find all integers at the end of the string
@@ -195,8 +190,7 @@ def search_split_files(directory, output_file):
           split_log_files = []
           for root, dirs, files in os.walk(video_directory):
             for file in files:
-              print(file)
-              if ~file.endswith('.txt'):
+              if not file.endswith('.txt'):
                 continue
               if file.endswith('decode.txt'):
                 continue
