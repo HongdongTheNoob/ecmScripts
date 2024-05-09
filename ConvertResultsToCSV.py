@@ -191,7 +191,7 @@ def search_split_files(directory, output_file):
       for sequence in video_sequences[video_class]:
         video_directory = os.path.join(directory, "Class" + video_class, sequence)
         for qp in qps:
-          print("Checking RA", sequence, qp)
+          print("Checking RA", sequence, qp, video_directory)
           split_log_files = []
           for root, dirs, files in os.walk(video_directory):
             for file in files:
