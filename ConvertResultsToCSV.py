@@ -235,7 +235,7 @@ def search_split_files(directory, output_file):
                   frame_count += 1
 
           task_string = os.path.join("Class" + video_class, sequence, "log-" + sequence + "-RA-" + qp + ".txt")
-          row_values = [task_string, '', '', str(float(total_bits)/(frame_count * video_frame_rates[sequence])), str(y_PSNR_sum/frame_count), str(u_PSNR_sum/frame_count), str(v_PSNR_sum/frame_count), '', '']
+          row_values = [task_string, '', '', str(float(total_bits)/(1024.0 * float(frame_count) / video_frame_rates[sequence])), str(y_PSNR_sum/frame_count), str(u_PSNR_sum/frame_count), str(v_PSNR_sum/frame_count), '', '']
           writer.writerow(row_values)
       
 def search_files_decode(directory, output_file):
