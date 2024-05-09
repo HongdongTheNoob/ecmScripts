@@ -80,8 +80,8 @@ def count_integers(string):
     return len(integers)
 
 def sort_frame_number(item):
-    # Find all integers at the end of the string
-    integers = re.findall(r'\d+$', item)
+    # Find all integers
+    integers = re.findall(r'\d+', item)
     # Convert the last integer to an integer and return it
     return int(integers[-1]) if integers else 0
     
