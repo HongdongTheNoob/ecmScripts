@@ -202,6 +202,9 @@ def search_split_files(directory, output_file):
               if count_integers(qp_and_frame_number) < 2:
                 continue
               split_log_files.append(os.path.join(root, file))
+
+          if len(split_log_files) == 0:
+            continue
           
           # rank
           split_log_files = sorted(split_log_files, key = sort_frame_number)
