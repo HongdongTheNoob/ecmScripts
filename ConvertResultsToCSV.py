@@ -125,7 +125,7 @@ def csv_file_reordering(df):
 def search_files(directory, output_file):
   with open(output_file, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
-    # writer.writerow(['File Path', 'Frame Count', '', 'Bit Rate', 'Y-PSNR', 'U-PSNR', 'V-PSNR', 'Encode Time', 'Decode Time', 'VM Peak'])
+    writer.writerow(['File Path', 'Frame Count', '', 'Bit Rate', 'Y-PSNR', 'U-PSNR', 'V-PSNR', 'Encode Time', 'Decode Time', 'VM Peak'])
     for root, dirs, files in os.walk(directory):
       for file in files:
         # check file names, exclude split files
@@ -136,18 +136,22 @@ def search_files(directory, output_file):
           file_path = os.path.relpath(os.path.join(root, file), directory)
           file_name_with_extension = os.path.basename(file_path)
           file_name, _ = os.path.splitext(file_name_with_extension)
-          match = re.search(r'/([^/0-9]*([0-9]+)[^/]*)$', file_name)
-          if match:
-            # Get the matched part containing integers
-            matched_part = match.group(1)          
-            # Count the number of integers in the matched part
-            num_integers = len(re.findall(r'\d+', matched_part))
-            # Skip splitted sequences
-            if num_integers > 1:
-              # split_task_files.append(file_path)
-              # task = file_name.rsplit('-', 1)[0]
-              # if task not in split_tasks:
-              #   split_tasks.append(task)
+          # match = re.search(r'/([^/0-9]*([0-9]+)[^/]*)$', file_name)
+          # if match:
+          #   # Get the matched part containing integers
+          #   matched_part = match.group(1)          
+          #   # Count the number of integers in the matched part
+          #   num_integers = len(re.findall(r'\d+', matched_part))
+          #   # Skip splitted sequences
+          #   if num_integers > 1:
+          #     # split_task_files.append(file_path)
+          #     # task = file_name.rsplit('-', 1)[0]
+          #     # if task not in split_tasks:
+          #     #   split_tasks.append(task)
+          #     continue
+          if "-RA-" in file_name:
+            index = file_name.find("-RA-")
+            if len(re.findall(r'\d+', file_name[index:])) > 1:
               continue
           with open(os.path.join(root, file), 'r') as txtfile:
             found_line = False
