@@ -24,6 +24,12 @@ if __name__ == '__main__':
   anchor_file = sys.argv[1]
   test_file =  sys.argv[2]
 
+  if ".csv" not in anchor_file:
+    anchor_file = "./Analysis/" + anchor_file + ".csv" 
+
+  if ".csv" not in test_file:
+    test_file = "./Analysis/" + test_file + ".csv" 
+
   df_anchor = pd.read_csv(anchor_file, header = None)
   df_test = pd.read_csv(test_file, header = None)
 
