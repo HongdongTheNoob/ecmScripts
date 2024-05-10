@@ -12,7 +12,7 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
                   'FlyingGraphics_420', 'Desktop_420', 'Console_420', 'ChineseEditing_420']
 
 classes = ['A1', 'A2', 'B', 'C', 'D', 'E', 'F', 'TGM']
-class_indices = [0, 3, 6, 11, 15, 19, 22, 26, 30]
+class_indices = [0, 3, 6, 11, 15, 19, 22, 26]
 
 configs = ['AI', 'RA', 'LB', 'LP']
 
@@ -31,6 +31,9 @@ if __name__ == '__main__':
   data_test = df_test.iloc[:, 3:7].values
 
   for i in range(len(data_anchor) // 4):
+    if i in class_indices:
+      print("Class", classes[class_indices.index(i)])
+      
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
     test_check = pd.DataFrame(data_test[i*4:i*4+4])
 
