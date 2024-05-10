@@ -31,8 +31,10 @@ if __name__ == '__main__':
   data_test = df_test.iloc[:, 3:7].values
 
   for i in range(len(data_anchor) // 4):
-    if i in class_indices:
-      print("Class", classes[class_indices.index(i)])
+    if i%30 == 0:
+      print(configs[i//30])
+    if i%30 in class_indices:
+      print("Class", classes[class_indices.index(i%30)])
       
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
     test_check = pd.DataFrame(data_test[i*4:i*4+4])
