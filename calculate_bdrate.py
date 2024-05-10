@@ -47,8 +47,8 @@ if __name__ == '__main__':
     
     bd_rates = [0, 0, 0]
     for colour in range(3):
-      bd_rates[colour] = int(bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip') * 100.0) / 100.0
+      bd_rates[colour] = bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip')
 
-    print(sequence_names[i % 30], configs[i // 30], f"{bd_rates[0]:.2f}%", f"{bd_rates[1]:.2f}%", f"{bd_rates[2]:.2f}%")
+    print('{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%')
 
 
