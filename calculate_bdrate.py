@@ -30,11 +30,14 @@ if __name__ == '__main__':
   data_anchor = df_anchor.iloc[:, 3:7].values
   data_test = df_test.iloc[:, 3:7].values
 
-  for i in range(len(data_anchor) // 4):
-    if i%30 == 0:
-      print(configs[i//30])
-    if i%30 in class_indices:
-      print("Class", classes[class_indices.index(i%30)])
+  # for i in range(len(data_anchor) // 4):
+
+  current_class = ""
+  for i in range(60):
+    if i % 30 == 0:
+      print(configs[i // 30])
+    if (i % 30) in class_indices:
+      current_class = classes[i % 30]
       
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
     test_check = pd.DataFrame(data_test[i*4:i*4+4])
@@ -51,6 +54,4 @@ if __name__ == '__main__':
     for colour in range(3):
       bd_rates[colour] = bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip')
 
-    print('{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%')
-
-
+    print('{:<3}'.format(current_class), '{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%')
