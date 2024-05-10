@@ -37,7 +37,7 @@ if __name__ == '__main__':
     if i % 30 == 0:
       print(configs[i // 30])
     if (i % 30) in class_indices:
-      current_class = classes[i % 30]
+      current_class = classes[class_indices.index(i % 30)]
       
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
     test_check = pd.DataFrame(data_test[i*4:i*4+4])
