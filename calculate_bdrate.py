@@ -48,11 +48,20 @@ if __name__ == '__main__':
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
     test_check = pd.DataFrame(data_test[i*4:i*4+4])
 
-    if anchor_check.isna().any().any() or test_check.isna().any().any():
+    if anchor_check.isna().any().any():
       continue
 
     anchor = data_anchor[i*4:i*4+4]
     test = data_test[i*4:i*4+4]
+
+    fill_anchor = 0
+    for r in range(4):
+      if test[r].isna().any():
+        test[r][:] = anchor[r][:]
+        fill_anchor += 1
+    if fill_anchor > 2:
+      continue
+
     anchor = [[row[i] for row in anchor] for i in range(len(anchor[0]))]
     test = [[row[i] for row in test] for i in range(len(test[0]))]
     
@@ -60,4 +69,5 @@ if __name__ == '__main__':
     for colour in range(3):
       bd_rates[colour] = bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip')
 
-    print('{:<3}'.format(current_class), '{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%')
+    missing_line_prompt = f'{fill_anchor} lines missing' if fill_anchor > 0 else ''
+    print('{:<3}'.format(current_class), '{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%', missing_line_prompt)
