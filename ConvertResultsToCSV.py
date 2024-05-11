@@ -36,36 +36,25 @@ video_sequences = {
 }
 
 video_frame_rates = {
-  "Tango2": 60,
-  "FoodMarket4": 60,
-  "Campfire": 30,
-  "CatRobot": 60,
-  "DaylightRoad2": 60,
-  "ParkRunning3": 50,
-  "MarketPlace": 60,
-  "RitualDance": 60,
-  "Cactus": 50,
-  "BasketballDrive": 50,
-  "BQTerrace": 60, 
-  "BasketballDrill": 50,
-  "BQMall": 60, 
-  "PartyScene": 50,
-  "RaceHorsesC": 30,
-  "BasketballPass": 50,
-  "BQSquare": 60,
-  "BlowingBubbles": 50,
-  "RaceHorses": 30,
-  "FourPeople": 60,
-  "Johnny": 60,
-  "KristenAndSara": 60,
-  "BasketballDrillText": 50,
-  "ArenaOfValor": 60,
-  "SlideEditing": 30,
-  "SlideShow": 20,
-  "FlyingGraphics_420": 60,
-  "Desktop_420": 60,
-  "Console_420": 60,
-  "ChineseEditing_420": 60
+  "Tango2": 60, "FoodMarket4": 60, "Campfire": 30,
+  "CatRobot": 60, "DaylightRoad2": 60, "ParkRunning3": 50,
+  "MarketPlace": 60, "RitualDance": 60, "Cactus": 50, "BasketballDrive": 50, "BQTerrace": 60, 
+  "BasketballDrill": 50, "BQMall": 60, "PartyScene": 50, "RaceHorsesC": 30,
+  "BasketballPass": 50, "BQSquare": 60, "BlowingBubbles": 50, "RaceHorses": 30,
+  "FourPeople": 60, "Johnny": 60, "KristenAndSara": 60,
+  "BasketballDrillText": 50, "ArenaOfValor": 60, "SlideEditing": 30, "SlideShow": 20,
+  "FlyingGraphics_420": 60, "Desktop_420": 60, "Console_420": 60, "ChineseEditing_420": 60
+}
+
+video_frame_counts = {
+  "Tango2": 294, "FoodMarket4": 300, "Campfire": 300,
+  "CatRobot": 300, "DaylightRoad2": 300, "ParkRunning3": 300,
+  "MarketPlace": 600, "RitualDance": 600, "Cactus": 500, "BasketballDrive": 500, "BQTerrace": 600, 
+  "BasketballDrill": 500, "BQMall": 600, "PartyScene": 500, "RaceHorsesC": 300,
+  "BasketballPass": 500, "BQSquare": 600, "BlowingBubbles": 500, "RaceHorses": 300,
+  "FourPeople": 600, "Johnny": 600, "KristenAndSara": 600,
+  "BasketballDrillText": 500, "ArenaOfValor": 600, "SlideEditing": 300, "SlideShow": 500,
+  "FlyingGraphics_420": 300, "Desktop_420": 600, "Console_420": 600, "ChineseEditing_420": 600
 }
 
 def extract_after_last_ra(string):
@@ -233,6 +222,9 @@ def search_split_files(directory, output_file):
                   u_PSNR_sum += hex2double(match_psnr.group(2))
                   v_PSNR_sum += hex2double(match_psnr.group(3))
                   frame_count += 1
+
+          if frame_count < video_frame_counts[sequence]:
+            continue
 
           task_string = os.path.join("Class" + video_class, sequence, "log-" + sequence + "-RA-" + qp + ".txt")
           row_values = [task_string, '', '', str(float(total_bits)/(1000.0 * float(frame_count) / video_frame_rates[sequence])), str(y_PSNR_sum/frame_count), str(u_PSNR_sum/frame_count), str(v_PSNR_sum/frame_count), '', '']
