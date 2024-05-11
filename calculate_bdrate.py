@@ -13,6 +13,8 @@ sequence_names = ['Tango2', 'FoodMarket4', 'Campfire',
 
 classes = ['A1', 'A2', 'B', 'C', 'D', 'E', 'F', 'TGM']
 class_indices = [0, 3, 6, 11, 15, 19, 22, 26]
+class_video_counts = [3, 3, 5, 4, 4, 3, 4, 4]
+
 
 configs = ['AI', 'RA', 'LB', 'LP']
 
@@ -39,11 +41,15 @@ if __name__ == '__main__':
   # for i in range(len(data_anchor) // 4):
 
   current_class = ""
+  current_class_result_count = 0
+  class_bd_rates = [0.0, 0.0, 0.0]
   for i in range(60):
     if i % 30 == 0:
       print(configs[i // 30])
     if (i % 30) in class_indices:
       current_class = classes[class_indices.index(i % 30)]
+      current_class_result_count = 0
+      class_bd_rates = [0.0, 0.0, 0.0]
       
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
 
@@ -68,6 +74,12 @@ if __name__ == '__main__':
     bd_rates = [0, 0, 0]
     for colour in range(3):
       bd_rates[colour] = bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip')
+      class_bd_rates[colour] += bd_rates[colour]
 
     missing_line_prompt = f'{fill_anchor} lines missing' if fill_anchor > 0 else ''
     print('{:<3}'.format(current_class), '{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%', missing_line_prompt)
+    current_class_result_count += 1
+
+    if current_class_result_count == class_video_counts[class_indices.index(i % 30)]:
+      print('{:<3}'.format(current_class), '{:<20}'.format("Average"), '{:>8.2f}'.format(class_bd_rates[0]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[1]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[2]/current_class_result_count)+'%')
+      
