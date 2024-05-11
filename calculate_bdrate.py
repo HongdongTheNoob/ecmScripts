@@ -55,8 +55,8 @@ if __name__ == '__main__':
 
     fill_anchor = 0
     for r in range(4):
-      test_check = pd.DataFrame(test[r])
-      if test_check.isna().any():
+      test_check = pd.DataFrame(data_test[i*4+r])
+      if test_check.isna().any().any():
         test[r][:] = anchor[r][:]
         fill_anchor += 1
     if fill_anchor > 2:
