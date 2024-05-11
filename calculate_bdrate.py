@@ -65,7 +65,7 @@ if __name__ == '__main__':
       if test_check.isna().any().any():
         test[r][:] = anchor[r][:]
         fill_anchor += 1
-    if fill_anchor > 2:
+    if fill_anchor > 3:
       continue
 
     anchor = [[row[i] for row in anchor] for i in range(len(anchor[0]))]
