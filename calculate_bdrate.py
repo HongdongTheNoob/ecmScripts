@@ -76,10 +76,10 @@ if __name__ == '__main__':
       bd_rates[colour] = bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip')
       class_bd_rates[colour] += bd_rates[colour]
 
-    missing_line_prompt = f'{fill_anchor} lines missing' if fill_anchor > 0 else ''
-    print('{:<3}'.format(current_class), '{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%', missing_line_prompt)
+    missing_line_prompt = f'  {fill_anchor} lines missing' if fill_anchor > 0 else ''
+    print('{:<4}'.format(current_class), '{:<20}'.format(sequence_names[i % 30]), '{:>8.2f}'.format(bd_rates[0])+'%', '{:>8.2f}'.format(bd_rates[1])+'%', '{:>8.2f}'.format(bd_rates[2])+'%', missing_line_prompt)
     current_class_result_count += 1
 
     if current_class_result_count == class_video_counts[classes.index(current_class)]:
-      print('{:<3}'.format(current_class), '{:<20}'.format("===== Average ====="), '{:>8.2f}'.format(class_bd_rates[0]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[1]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[2]/current_class_result_count)+'%')
+      print('{:<4}'.format(current_class), '{:<20}'.format("===== Average ====="), '{:>8.2f}'.format(class_bd_rates[0]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[1]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[2]/current_class_result_count)+'%')
       
