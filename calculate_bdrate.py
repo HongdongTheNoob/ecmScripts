@@ -81,5 +81,5 @@ if __name__ == '__main__':
     current_class_result_count += 1
 
     if current_class_result_count == class_video_counts[classes.index(current_class)]:
-      print('{:<3}'.format(current_class), '{:<20}'.format("Average"), '{:>8.2f}'.format(class_bd_rates[0]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[1]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[2]/current_class_result_count)+'%')
+      print('{:<3}'.format(current_class), '{:<20}'.format("===== Average ====="), '{:>8.2f}'.format(class_bd_rates[0]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[1]/current_class_result_count)+'%', '{:>8.2f}'.format(class_bd_rates[2]/current_class_result_count)+'%')
       
