@@ -46,7 +46,6 @@ if __name__ == '__main__':
       current_class = classes[class_indices.index(i % 30)]
       
     anchor_check = pd.DataFrame(data_anchor[i*4:i*4+4])
-    test_check = pd.DataFrame(data_test[i*4:i*4+4])
 
     if anchor_check.isna().any().any():
       continue
@@ -56,7 +55,8 @@ if __name__ == '__main__':
 
     fill_anchor = 0
     for r in range(4):
-      if test[r].isna().any():
+      test_check = pd.DataFrame(test[r])
+      if test_check.isna().any():
         test[r][:] = anchor[r][:]
         fill_anchor += 1
     if fill_anchor > 2:
