@@ -43,7 +43,7 @@ if __name__ == '__main__':
   current_class = ""
   current_class_result_count = 0
   class_bd_rates = [0.0, 0.0, 0.0]
-  for i in range(60):
+  for i in range(min(len(data_anchor), len(data_test))//4):
     if i % 30 == 0:
       print(configs[i // 30])
     if (i % 30) in class_indices:
