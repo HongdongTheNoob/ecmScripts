@@ -20,6 +20,10 @@ class_video_counts = [3, 3, 5, 4, 4, 3, 4, 4]
 
 configs = ['AI', 'RA', 'LB', 'LP']
 
+def convert_to_numbers(data):
+    for row in data:
+        yield [float(value) for value in row]
+
 if __name__ == '__main__':
   if len(sys.argv) < 3:
     print("Usage: python calculate_bdrate.py /path/to/anchor.csv /path/to/test.csv")
@@ -43,8 +47,8 @@ if __name__ == '__main__':
   df_anchor = pd.read_csv(anchor_file, header = None)
   df_test = pd.read_csv(test_file, header = None)
 
-  data_anchor = df_anchor.iloc[:, 3:7].values
-  data_test = df_test.iloc[:, 3:7].values
+  data_anchor = convert_to_numbers(df_anchor.iloc[:, 3:7].values)
+  data_test = convert_to_numbers(df_test.iloc[:, 3:7].values)
 
   fill_lines = [np.nan] * 4
 
