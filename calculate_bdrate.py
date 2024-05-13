@@ -1,6 +1,8 @@
 import bjontegaard as bd
 import pandas as pd
 import sys
+import os
+import numpy as np
 
 sequence_names = ['Tango2', 'FoodMarket4', 'Campfire', 
                   'CatRobot', 'DaylightRoad2', 'ParkRunning3',
@@ -28,15 +30,27 @@ if __name__ == '__main__':
 
   if ".csv" not in anchor_file:
     anchor_file = "./Analysis/" + anchor_file + ".csv" 
+  if not os.path.isfile(anchor_file):
+    print("Anchor file does not exist.")
+    sys.exit(1)
 
   if ".csv" not in test_file:
     test_file = "./Analysis/" + test_file + ".csv" 
+  if not os.path.isfile(test_file):
+    print("Test file does not exist.")
+    sys.exit(1)
 
   df_anchor = pd.read_csv(anchor_file, header = None)
   df_test = pd.read_csv(test_file, header = None)
 
   data_anchor = df_anchor.iloc[:, 3:7].values
   data_test = df_test.iloc[:, 3:7].values
+
+  fill_lines = [np.nan] * 4
+
+  if data_test % 4 > 0:
+    for i in range(4 - (data_test % 4)):
+      data_test.append(fill_lines)
 
   # for i in range(len(data_anchor) // 4):
 
