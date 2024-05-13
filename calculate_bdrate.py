@@ -47,8 +47,8 @@ if __name__ == '__main__':
   df_anchor = pd.read_csv(anchor_file, header = None)
   df_test = pd.read_csv(test_file, header = None)
 
-  data_anchor = list(convert_to_numbers(df_anchor.iloc[:, 3:7].values))
-  data_test = list(convert_to_numbers(df_test.iloc[:, 3:7].values))
+  data_anchor = df_anchor.iloc[:, 3:7].values
+  data_test = df_test.iloc[:, 3:7].values
 
   fill_lines = [np.nan] * 4
 
