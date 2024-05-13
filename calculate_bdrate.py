@@ -89,8 +89,6 @@ if __name__ == '__main__':
     test = [[row[i] for row in test] for i in range(len(test[0]))]
     
     bd_rates = [0, 0, 0]
-    print(anchor)
-    print(test)
     for colour in range(3):
       bd_rates[colour] = bd.bd_rate(anchor[0], anchor[colour + 1], test[0], test[colour + 1], method = 'pchip')
       class_bd_rates[colour] += bd_rates[colour]
