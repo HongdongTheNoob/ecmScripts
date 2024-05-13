@@ -50,11 +50,11 @@ if __name__ == '__main__':
   data_anchor = convert_to_numbers(df_anchor.iloc[:, 3:7].values)
   data_test = convert_to_numbers(df_test.iloc[:, 3:7].values)
 
-  fill_lines = [np.nan] * 4
+  # fill_lines = [np.nan] * 4
 
-  if len(data_test) % 4 > 0:
-    for i in range(4 - (len(data_test) % 4)):
-      data_test.append(fill_lines)
+  # if len(data_test) % 4 > 0:
+  #   for i in range(4 - (len(data_test) % 4)):
+  #     data_test.append(fill_lines)
 
   # for i in range(len(data_anchor) // 4):
 
