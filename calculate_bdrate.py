@@ -20,9 +20,15 @@ class_video_counts = [3, 3, 5, 4, 4, 3, 4, 4]
 
 configs = ['AI', 'RA', 'LB', 'LP']
 
+def safe_float_conversion(s):
+    try:
+        return float(s)
+    except ValueError:
+        return np.nan  # or any other default value
+
 def convert_to_numbers(data):
     for row in data:
-        yield [float(value) for value in row]
+        yield [safe_float_conversion(value) for value in row]
 
 if __name__ == '__main__':
   if len(sys.argv) < 3:
@@ -74,8 +80,9 @@ if __name__ == '__main__':
       continue
 
     anchor = data_anchor[i*4:i*4+4]
-    test = data_test[i*4:i*4+4]
+    anchor = list(convert_to_numbers(anchor))
 
+    test = data_test[i*4:i*4+4]
     fill_anchor = 0
     for r in range(4):
       test_check = pd.DataFrame(data_test[i*4+r])
