@@ -263,9 +263,7 @@ do
   then
     IntraPeriod="-ip 64"
     case $name in
-      "Campfire"|"RaceHorsesC"|"RaceHorses"|"SlideEditing") IntraPeriod="-ip 32"
-      ;;
-      "SlideShow") IntraPeriod="-ip 24"
+      "Campfire"|"RaceHorsesC"|"RaceHorses"|"SlideEditing"|"SlideShow") IntraPeriod="-ip 32"
       ;;
     esac
   fi
